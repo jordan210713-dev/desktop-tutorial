@@ -1,31 +1,207 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mundo de los Peces</title>
+
+    <!-- Conexión con CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <body>
 
-  <h1>Bienvenidos a Mundo de los Peces</h1>
+    <!-- Encabezado de la página -->
+    <header class="header">
+<a href="index.html" class="logo">
+    <i class="fa-solid fa-fish"></i>
+    Mundo de los Peces
+</a>
 
-    <p>
-    Descubre el maravilloso mundo de los peces.
-    Aprende sobre sus cuidados, alimentación,
-    compatibilidad entre especies y todo lo
-    necesario para mantener un acuario saludable.
-</p>
-    
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="orientales.html">Peces Orientales</a>
-    <a href="tropicales.html">Peces Tropicales</a>
-    <a href="agua-salada.html">Agua Salada</a>
-    <a href="contacto.html">Contacto</a>
+        <!-- Botón hamburguesa -->
+        <button class="hamburguesa"
+                id="boton-menu"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <!-- Menú de navegación -->
+        
+<nav class="menu" id="menu">
+    <ul>
+        <li>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="orientales.html">
+                <i class="fa-solid fa-fish"></i>
+                Peces Orientales
+            </a>
+        </li>
+
+        <li>
+            <a href="tropicales.html">
+                <i class="fa-solid fa-water"></i>
+                Peces Tropicales
+            </a>
+        </li>
+
+        <li>
+            <a href="agua-salada.html">
+                <i class="fa-solid fa-anchor"></i>
+                Agua Salada
+            </a>
+        </li>
+
+        <li>
+            <a href="contacto.html">
+                <i class="fa-solid fa-envelope"></i>
+                Contacto
+            </a>
+        </li>
+    </ul>
 </nav>
 
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Primera sección: Historia -->
+        <section class="historia">
+
+            <h1>Bienvenidos a Mundo de los Peces</h1>
+
+            <p>
+                Mundo de los Peces nace con la idea de
+                compartir información sobre el fascinante
+                mundo de los acuarios y las diferentes
+                especies de peces.
+
+                Nuestro objetivo es ayudar a las personas
+                a conocer sus cuidados, alimentación,
+                compatibilidad y las condiciones necesarias
+                para mantener un acuario saludable.
+            </p>
+
+        </section>
+
+        <!-- Segunda sección: Especies -->
+        <section class="equipo">
+
+            <h2>Conoce nuestras especies</h2>
+
+            <p>
+                En Mundo de los Peces encontrarás
+                información sobre peces orientales
+                como los Goldfish y Koi, además de
+                diferentes especies tropicales.
+
+                También aprenderás sobre sus
+                características, necesidades y
+                compatibilidad con otros peces.
+            </p>
+
+        </section>
+
+<section class="servicios">
+    <h2>Nuestros servicios</h2>
+
+    <p>
+        En Mundo de los Peces ofrecemos información
+        y orientación para el cuidado adecuado
+        de los peces y acuarios.
+    </p>
+
+    <ul>
+        <li>Cuidados y alimentación de peces</li>
+        <li>Compatibilidad entre especies</li>
+        <li>Mantenimiento de acuarios</li>
+    </ul>
+</section>
+
+<section class="galeria">
+    <h2>Galería de Mundo de los Peces</h2>
+
+    <p>
+        Conoce algunas de las especies de peces
+        ornamentales y descubre la belleza del
+        mundo de los acuarios.
+    </p>
+
+    <div class="fotos">
+        <img src="img/historia1.jpg" alt="Peces ornamentales">
+
+        <img src="img/historia2.jpg" alt="Acuarios y peces">
+
+        <img src="img/historia3.jpg" alt="Variedades de peces">
+    </div>
+</section>
+
+  </main>
+  
+<footer>
+    <div>
+        <p><strong>Mundo de los Peces</strong></p>
+
+        <p>
+            Información sobre peces, acuarios,
+            alimentación y compatibilidad.
+        </p>
+
+        <p>
+            Correo: contacto@ejemplo.com
+        </p>
+    </div>
+
+    <ul class="redes">
+        <li>
+            <a href="https://www.facebook.com/"
+               target="_blank" rel="noopener noreferrer">
+                Facebook
+            </a>
+        </li>
+
+        <li>
+            <a href="https://twitter.com/"
+               target="_blank" rel="noopener noreferrer">
+                Twitter
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.instagram.com/"
+               target="_blank" rel="noopener noreferrer">
+                Instagram
+            </a>
+        </li>
+    </ul>
+
+    <p>&copy; 2026 Mundo de los Peces.</p>
+</footer>
+
+    
+
+    
+
+    <!-- Conexión con JavaScript -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>

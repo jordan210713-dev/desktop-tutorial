@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto - Mundo de los Peces</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            Mundo de los Peces
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="hamburguesa"
+                id="boton-menu"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <!-- Menú de navegación -->
+        <nav class="menu" id="menu">
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+
+                <li>
+                    <a href="orientales.html">
+                        Peces Orientales
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tropicales.html">
+                        Peces Tropicales
+                    </a>
+                </li>
+
+                <li>
+                    <a href="agua-salada.html">
+                        Agua Salada
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Formulario de contacto -->
+    <form action="enviar.php" method="post" class="formulario">
+
+        <h1>Contáctanos</h1>
+
+        <p>
+            ¿Tienes dudas sobre el cuidado de tus peces
+            o la compatibilidad entre especies?
+            Envíanos tu consulta.
+        </p>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text"
+               id="nombre"
+               name="nombre"
+               required>
+
+        <label for="correo">Email:</label>
+        <input type="email"
+               id="correo"
+               name="correo"
+               required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  required></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <!-- Conexión con JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
