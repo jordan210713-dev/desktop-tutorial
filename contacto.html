@@ -9,15 +9,22 @@
 
     <title>Contacto - Mundo de los Peces</title>
 
+    <!-- Conexión con CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Íconos Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado principal -->
     <header class="header">
 
+        <!-- Logo -->
         <a href="index.html" class="logo">
+            <i class="fa-solid fa-fish"></i>
             Mundo de los Peces
         </a>
 
@@ -37,71 +44,167 @@
 
         <!-- Menú de navegación -->
         <nav class="menu" id="menu">
-
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
 
                 <li>
                     <a href="orientales.html">
+                        <i class="fa-solid fa-fish"></i>
                         Peces Orientales
                     </a>
                 </li>
 
                 <li>
                     <a href="tropicales.html">
+                        <i class="fa-solid fa-water"></i>
                         Peces Tropicales
                     </a>
                 </li>
 
                 <li>
                     <a href="agua-salada.html">
+                        <i class="fa-solid fa-anchor"></i>
                         Agua Salada
                     </a>
                 </li>
 
                 <li>
+                    <a href="nosotros.html">
+                        <i class="fa-solid fa-users"></i>
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="servicios.html">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
                     <a href="contacto.html">
+                        <i class="fa-solid fa-envelope"></i>
                         Contacto
                     </a>
                 </li>
-            </ul>
 
+            </ul>
         </nav>
+
+        <!-- Botón de acceso a la tienda -->
+        <a href="tienda.html"
+           class="boton-tienda"
+           aria-label="Visitar tienda">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
 
     </header>
 
-    <!-- Formulario de contacto -->
-    <form action="enviar.php" method="post" class="formulario">
+    <!-- Contenido principal -->
+    <main>
 
-        <h1>Contáctanos</h1>
+        <!-- Formulario de contacto -->
+        <form action="enviar.php"
+              method="post"
+              class="formulario">
 
-        <p>
-            ¿Tienes dudas sobre el cuidado de tus peces
-            o la compatibilidad entre especies?
-            Envíanos tu consulta.
-        </p>
+            <h1>
+                <i class="fa-solid fa-envelope"></i>
+                Contáctanos
+            </h1>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text"
-               id="nombre"
-               name="nombre"
-               required>
+            <p>
+                ¿Tienes dudas sobre el cuidado de tus peces
+                o la compatibilidad entre especies?
+                Envíanos tu consulta.
+            </p>
 
-        <label for="correo">Email:</label>
-        <input type="email"
-               id="correo"
-               name="correo"
-               required>
+            <!-- Nombre -->
+            <label for="nombre">Nombre:</label>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje"
-                  name="mensaje"
-                  rows="5"
-                  required></textarea>
+            <input type="text"
+                   id="nombre"
+                   name="nombre"
+                   required>
 
-        <button type="submit">Enviar</button>
+            <!-- Correo -->
+            <label for="correo">Email:</label>
 
-    </form>
+            <input type="email"
+                   id="correo"
+                   name="correo"
+                   required>
+
+            <!-- Mensaje -->
+            <label for="mensaje">Mensaje:</label>
+
+            <textarea id="mensaje"
+                      name="mensaje"
+                      rows="5"
+                      required></textarea>
+
+            <!-- Botón enviar -->
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Enviar
+            </button>
+
+        </form>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <div>
+            <p><strong>Mundo de los Peces</strong></p>
+
+            <p>
+                Información sobre peces ornamentales,
+                acuarios, alimentación y cuidados.
+            </p>
+
+            <p>Correo: contacto@ejemplo.com</p>
+        </div>
+
+        <ul class="redes">
+
+            <li>
+                <a href="https://www.facebook.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Twitter
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram
+                </a>
+            </li>
+
+        </ul>
+
+        <p>&copy; 2026 Mundo de los Peces.</p>
+
+    </footer>
 
     <!-- Conexión con JavaScript -->
     <script src="js/main.js"></script>

@@ -1,45 +1,515 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Peces Orientales - Mundo de los Peces</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
-    <h1>Peces Orientales</h1>
+    <!-- Encabezado principal -->
+    <header class="header">
 
-    <p>
-        Conoce las diferentes variedades de peces
-        ornamentales, sus cuidados, alimentación
-        y compatibilidad.
-    </p>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-fish"></i>
+            Mundo de los Peces
+        </a>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="orientales.html">Peces Orientales</a>
-        <a href="tropicales.html">Peces Tropicales</a>
-        <a href="agua-salada.html">Agua Salada</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+        <!-- Menú hamburguesa -->
+        <button class="hamburguesa"
+                id="boton-menu"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu">
 
-    <h2>Goldfish</h2>
-    <img src="img/goldfish.jpg" alt="Goldfish" class="imagen-pez">
-    <p>
-        Los goldfish son peces ornamentales de agua
-        dulce conocidos por sus diferentes colores,
-        formas y variedades.
-    </p>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-    <h2>Peces Koi</h2>
-    <img src="img/koi.jpg" alt="Peces Koi" class="imagen-pez">
-    <p>
-        Los koi son carpas ornamentales conocidas
-        por sus colores y patrones. Necesitan
-        estanques amplios y buena filtración.
-    </p>
+        <!-- Menú de navegación -->
+        <nav class="menu" id="menu">
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="orientales.html">
+                        <i class="fa-solid fa-fish"></i>
+                        Peces Orientales
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tropicales.html">
+                        <i class="fa-solid fa-water"></i>
+                        Peces Tropicales
+                    </a>
+                </li>
+
+                <li>
+                    <a href="agua-salada.html">
+                        <i class="fa-solid fa-anchor"></i>
+                        Agua Salada
+                    </a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html">
+                        <i class="fa-solid fa-users"></i>
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="servicios.html">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Tienda -->
+        <a href="tienda.html"
+           class="boton-tienda"
+           aria-label="Visitar tienda">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- Introducción -->
+        <section class="historia">
+
+            <h1>Conoce los Peces Orientales</h1>
+
+            <p>
+                Los Goldfish y los Koi son peces ornamentales
+                muy conocidos por sus colores, variedades
+                y larga historia en la acuariofilia.
+
+                Aunque ambas especies pertenecen a la familia
+                de los ciprínidos, presentan diferencias
+                importantes en su tamaño, alimentación
+                y necesidades de espacio.
+
+                En esta sección conoceremos sus características,
+                cuidados y reproducción.
+            </p>
+
+        </section>
+
+        <!-- GOLDFISH -->
+        <section class="equipo">
+
+            <h2>
+                <i class="fa-solid fa-fish"></i>
+                Goldfish
+            </h2>
+
+            <p>
+                <strong>Nombre científico:</strong>
+                Carassius auratus.
+            </p>
+
+            <p>
+                El Goldfish es uno de los peces ornamentales
+                más populares del mundo.
+
+                Su domesticación comenzó en China y, con
+                el paso del tiempo, se desarrollaron
+                numerosas variedades como Oranda, Ryukin,
+                Ranchu, Telescopio y Cometa.
+
+                Son peces sociales que necesitan espacio,
+                buena filtración y una alimentación equilibrada.
+            </p>
+
+            <img src="img/goldfish.jpg"
+                 alt="Pez Goldfish ornamental"
+                 class="imagen-seccion">
+
+            <h3>Características principales</h3>
+
+            <ul>
+                <li>Nombre científico: Carassius auratus.</li>
+                <li>Temperatura habitual: 18 a 24 °C.</li>
+                <li>pH recomendado: aproximadamente 7.0 a 8.0.</li>
+                <li>Agua dulce, bien oxigenada y filtrada.</li>
+                <li>Comportamiento generalmente pacífico.</li>
+                <li>Necesitan acuarios amplios.</li>
+                <li>Pueden vivir más de 10 años con buenos cuidados.</li>
+            </ul>
+
+            <h3>Alimentación</h3>
+
+            <p>
+                Los Goldfish son omnívoros y necesitan
+                una dieta variada.
+
+                Se pueden alimentar con pellets
+                de buena calidad, vegetales adecuados
+                y alimentos complementarios.
+
+                Es importante evitar darles más comida
+                de la que pueden consumir y retirar
+                los restos para no contaminar el agua.
+            </p>
+
+            <h3>Cuidados del acuario</h3>
+
+            <p>
+                Los Goldfish producen una cantidad
+                considerable de desechos.
+
+                Por eso necesitan una buena filtración
+                biológica, cambios parciales de agua
+                y controles periódicos de amoníaco,
+                nitritos y nitratos.
+
+                El amoníaco y los nitritos deben
+                mantenerse en niveles no detectables.
+            </p>
+
+            <h3>Reproducción de los Goldfish</h3>
+
+            <p>
+                Los Goldfish son peces ovíparos,
+                lo que significa que se reproducen
+                mediante huevos.
+
+                Cuando alcanzan la madurez sexual
+                y las condiciones son adecuadas,
+                pueden comenzar el proceso reproductivo.
+            </p>
+
+            <h3>¿Cómo identificar al macho y la hembra?</h3>
+
+            <p>
+                Durante la época reproductiva,
+                los machos pueden desarrollar pequeños
+                puntos blancos llamados tubérculos
+                nupciales en los opérculos
+                y las aletas pectorales.
+
+                Las hembras pueden presentar un abdomen
+                más redondeado cuando tienen huevos.
+            </p>
+
+            <h3>Proceso de reproducción</h3>
+
+            <ol>
+                <li>
+                    El macho comienza a perseguir
+                    a la hembra.
+                </li>
+
+                <li>
+                    La hembra libera huevos adhesivos
+                    entre plantas o superficies.
+                </li>
+
+                <li>
+                    El macho libera esperma para
+                    fecundar los huevos externamente.
+                </li>
+
+                <li>
+                    Los huevos fecundados comienzan
+                    su desarrollo.
+                </li>
+
+                <li>
+                    Las larvas nacen generalmente
+                    después de 3 a 7 días,
+                    dependiendo de la temperatura.
+                </li>
+            </ol>
+
+            <h3>Cuidados de los huevos y alevines</h3>
+
+            <p>
+                Los Goldfish adultos pueden comerse
+                los huevos y las crías.
+
+                Por esta razón, en la reproducción
+                controlada se suelen separar
+                los huevos o retirar a los adultos.
+
+                Cuando los alevines comienzan
+                a nadar libremente, necesitan
+                alimentos muy pequeños, como
+                infusorios y posteriormente
+                nauplios de artemia.
+            </p>
+
+        </section>
+
+        <!-- KOI -->
+        <section class="servicios">
+
+            <h2>
+                <i class="fa-solid fa-fish-fins"></i>
+                Peces Koi
+            </h2>
+
+            <p>
+                <strong>Nombre científico:</strong>
+                Cyprinus carpio.
+            </p>
+
+            <p>
+                Los Koi son carpas ornamentales
+                reconocidas por sus colores
+                y patrones.
+
+                Su crianza ornamental se desarrolló
+                especialmente en Japón.
+
+                Existen variedades como Kohaku,
+                Sanke, Showa y Ogon.
+
+                Debido a su tamaño, los Koi
+                necesitan estanques grandes
+                y sistemas de filtración adecuados.
+            </p>
+
+            <img src="img/koi.jpg"
+                 alt="Carpas Koi ornamentales"
+                 class="imagen-seccion">
+
+            <h3>Características principales</h3>
+
+            <ul>
+                <li>Nombre científico: Cyprinus carpio.</li>
+                <li>Temperatura habitual: 15 a 25 °C.</li>
+                <li>pH recomendado: aproximadamente 7.0 a 8.5.</li>
+                <li>Son peces de agua dulce.</li>
+                <li>Pueden superar los 60 cm de longitud.</li>
+                <li>Necesitan estanques amplios y profundos.</li>
+                <li>Pueden vivir varias décadas con buenos cuidados.</li>
+            </ul>
+
+            <h3>Alimentación</h3>
+
+            <p>
+                Los Koi son peces omnívoros.
+
+                Se alimentan principalmente
+                de pellets formulados para
+                carpas ornamentales.
+
+                También pueden consumir vegetales
+                y otros alimentos adecuados.
+
+                La cantidad y frecuencia de
+                alimentación deben ajustarse
+                a la temperatura del agua,
+                la edad y la actividad de los peces.
+            </p>
+
+            <h3>Cuidados del estanque</h3>
+
+            <p>
+                Los Koi necesitan estanques
+                de gran capacidad para crecer
+                y nadar correctamente.
+
+                Es importante contar con filtración
+                biológica, oxigenación, buena
+                circulación del agua y mantenimiento
+                periódico.
+
+                También deben controlarse los niveles
+                de amoníaco, nitritos y nitratos.
+            </p>
+
+            <h3>Reproducción de los Koi</h3>
+
+            <p>
+                Los Koi también son peces ovíparos
+                y se reproducen mediante fecundación
+                externa.
+
+                Generalmente se reproducen
+                durante las épocas cálidas,
+                cuando la temperatura del agua
+                aumenta y las condiciones
+                son favorables.
+            </p>
+
+            <h3>¿Cómo identificar al macho y la hembra?</h3>
+
+            <p>
+                Las hembras adultas suelen presentar
+                un cuerpo más ancho y un abdomen
+                redondeado cuando desarrollan huevos.
+
+                Los machos normalmente tienen
+                una forma corporal más delgada
+                y pueden desarrollar tubérculos
+                nupciales durante la reproducción.
+            </p>
+
+            <h3>Proceso de reproducción</h3>
+
+            <ol>
+                <li>
+                    Los machos comienzan a perseguir
+                    a las hembras.
+                </li>
+
+                <li>
+                    La hembra libera numerosos
+                    huevos adhesivos entre
+                    plantas o materiales de desove.
+                </li>
+
+                <li>
+                    Los machos fecundan
+                    los huevos externamente.
+                </li>
+
+                <li>
+                    Los huevos fecundados
+                    comienzan a desarrollarse.
+                </li>
+
+                <li>
+                    Las larvas suelen nacer
+                    aproximadamente entre
+                    3 y 7 días después,
+                    según la temperatura del agua.
+                </li>
+            </ol>
+
+            <h3>Cuidados de los huevos y alevines</h3>
+
+            <p>
+                Los Koi adultos pueden comerse
+                los huevos y los alevines.
+
+                En los criaderos se utilizan
+                estanques o recipientes
+                preparados para protegerlos.
+
+                Los alevines necesitan agua
+                de buena calidad, oxigenación
+                y alimentos adecuados
+                a su tamaño.
+
+                Conforme crecen, se pueden
+                seleccionar y clasificar
+                según su desarrollo,
+                salud y características.
+            </p>
+
+        </section>
+
+        <!-- Comparación -->
+        <section class="equipo">
+
+            <h2>
+                <i class="fa-solid fa-scale-balanced"></i>
+                Diferencias entre Goldfish y Koi
+            </h2>
+
+            <p>
+                Aunque los Goldfish y los Koi
+                comparten algunas características,
+                sus necesidades de espacio
+                son diferentes.
+
+                Los Goldfish pueden mantenerse
+                en acuarios amplios, mientras
+                que los Koi necesitan estanques
+                mucho más grandes debido
+                a su crecimiento.
+
+                Ambas especies requieren
+                una alimentación equilibrada,
+                agua de buena calidad
+                y filtración adecuada.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <div>
+            <p><strong>Mundo de los Peces</strong></p>
+
+            <p>
+                Información sobre peces ornamentales,
+                acuarios, alimentación y reproducción.
+            </p>
+
+            <p>Correo: contacto@ejemplo.com</p>
+        </div>
+
+        <ul class="redes">
+
+            <li>
+                <a href="https://www.facebook.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Twitter
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram
+                </a>
+            </li>
+
+        </ul>
+
+        <p>&copy; 2026 Mundo de los Peces.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>

@@ -10,17 +10,21 @@
 
     <!-- Conexión con CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Íconos Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 <body>
 
     <!-- Encabezado de la página -->
     <header class="header">
-<a href="index.html" class="logo">
-    <i class="fa-solid fa-fish"></i>
-    Mundo de los Peces
-</a>
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-fish"></i>
+            Mundo de los Peces
+        </a>
 
         <!-- Botón hamburguesa -->
         <button class="hamburguesa"
@@ -37,46 +41,67 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         </button>
 
         <!-- Menú de navegación -->
-        
-<nav class="menu" id="menu">
-    <ul>
-        <li>
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-                Inicio
-            </a>
-        </li>
+        <nav class="menu" id="menu">
+            <ul>
 
-        <li>
-            <a href="orientales.html">
-                <i class="fa-solid fa-fish"></i>
-                Peces Orientales
-            </a>
-        </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
 
-        <li>
-            <a href="tropicales.html">
-                <i class="fa-solid fa-water"></i>
-                Peces Tropicales
-            </a>
-        </li>
+                <li>
+                    <a href="orientales.html">
+                        <i class="fa-solid fa-fish"></i>
+                        Peces Orientales
+                    </a>
+                </li>
 
-        <li>
-            <a href="agua-salada.html">
-                <i class="fa-solid fa-anchor"></i>
-                Agua Salada
-            </a>
-        </li>
+                <li>
+                    <a href="tropicales.html">
+                        <i class="fa-solid fa-water"></i>
+                        Peces Tropicales
+                    </a>
+                </li>
 
-        <li>
-            <a href="contacto.html">
-                <i class="fa-solid fa-envelope"></i>
-                Contacto
-            </a>
-        </li>
-    </ul>
-</nav>
+                <li>
+                    <a href="agua-salada.html">
+                        <i class="fa-solid fa-anchor"></i>
+                        Agua Salada
+                    </a>
+                </li>
 
+                <li>
+                    <a href="nosotros.html">
+                        <i class="fa-solid fa-users"></i>
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="servicios.html">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+<!-- Botón de acceso a la tienda -->
+<a href="tienda.html"
+   class="boton-tienda"
+   aria-label="Visitar tienda">
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
 
     </header>
 
@@ -120,85 +145,103 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
         </section>
 
-<section class="servicios">
-    <h2>Nuestros servicios</h2>
+        <!-- Tercera sección: Servicios -->
+        <section class="servicios">
 
-    <p>
-        En Mundo de los Peces ofrecemos información
-        y orientación para el cuidado adecuado
-        de los peces y acuarios.
-    </p>
+            <h2>Nuestros servicios</h2>
 
-    <ul>
-        <li>Cuidados y alimentación de peces</li>
-        <li>Compatibilidad entre especies</li>
-        <li>Mantenimiento de acuarios</li>
-    </ul>
-</section>
+            <p>
+                En Mundo de los Peces ofrecemos información
+                y orientación para el cuidado adecuado
+                de los peces y acuarios.
+            </p>
 
-<section class="galeria">
-    <h2>Galería de Mundo de los Peces</h2>
+            <ul>
+                <li>Cuidados y alimentación de peces</li>
+                <li>Compatibilidad entre especies</li>
+                <li>Mantenimiento de acuarios</li>
+            </ul>
 
-    <p>
-        Conoce algunas de las especies de peces
-        ornamentales y descubre la belleza del
-        mundo de los acuarios.
-    </p>
+        </section>
 
-    <div class="fotos">
-        <img src="img/historia1.jpg" alt="Peces ornamentales">
+        <!-- Cuarta sección: Galería -->
+        <section class="galeria">
 
-        <img src="img/historia2.jpg" alt="Acuarios y peces">
+            <h2>Galería de Mundo de los Peces</h2>
 
-        <img src="img/historia3.jpg" alt="Variedades de peces">
-    </div>
-</section>
+            <p>
+                Conoce algunas de las especies de peces
+                ornamentales y descubre la belleza del
+                mundo de los acuarios.
+            </p>
 
-  </main>
-  
-<footer>
-    <div>
-        <p><strong>Mundo de los Peces</strong></p>
+            <div class="fotos">
 
-        <p>
-            Información sobre peces, acuarios,
-            alimentación y compatibilidad.
-        </p>
+                <img src="img/historia1.jpg"
+                     alt="Peces ornamentales">
 
-        <p>
-            Correo: contacto@ejemplo.com
-        </p>
-    </div>
+                <img src="img/historia2.jpg"
+                     alt="Acuarios y peces">
 
-    <ul class="redes">
-        <li>
-            <a href="https://www.facebook.com/"
-               target="_blank" rel="noopener noreferrer">
-                Facebook
-            </a>
-        </li>
+                <img src="img/historia3.jpg"
+                     alt="Variedades de peces">
 
-        <li>
-            <a href="https://twitter.com/"
-               target="_blank" rel="noopener noreferrer">
-                Twitter
-            </a>
-        </li>
+            </div>
 
-        <li>
-            <a href="https://www.instagram.com/"
-               target="_blank" rel="noopener noreferrer">
-                Instagram
-            </a>
-        </li>
-    </ul>
+        </section>
 
-    <p>&copy; 2026 Mundo de los Peces.</p>
-</footer>
+    </main>
 
-    
+    <!-- Pie de página -->
+    <footer>
 
-    
+        <div>
+            <p>
+                <strong>Mundo de los Peces</strong>
+            </p>
+
+            <p>
+                Información sobre peces, acuarios,
+                alimentación y compatibilidad.
+            </p>
+
+            <p>
+                Correo: contacto@ejemplo.com
+            </p>
+        </div>
+
+        <!-- Redes sociales -->
+        <ul class="redes">
+
+            <li>
+                <a href="https://www.facebook.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Twitter
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Instagram
+                </a>
+            </li>
+
+        </ul>
+
+        <p>&copy; 2026 Mundo de los Peces.</p>
+
+    </footer>
 
     <!-- Conexión con JavaScript -->
     <script src="js/main.js"></script>

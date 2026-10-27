@@ -149,3 +149,132 @@ p {
         font-size: 20px;
     }
 }
+
+/* Imágenes de Nosotros y Servicios */
+
+.imagen-seccion {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px auto 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    .imagen-seccion {
+        height: 220px;
+    }
+}
+
+/* Botón del carrito en el encabezado */
+
+.boton-tienda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    color: white;
+    background: #1976b9;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.boton-tienda:hover {
+    background: #00a6d6;
+    transform: scale(1.1);
+}
+
+/* Página de tienda en construcción */
+
+.pagina-tienda {
+    padding: 50px 20px;
+    background: #eef8fc;
+}
+
+.tienda-construccion {
+    max-width: 950px;
+    margin: auto;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icono-tienda {
+    font-size: 65px;
+    color: #0879b9;
+    margin-bottom: 15px;
+}
+
+.tienda-construccion h1 {
+    color: #064e7c;
+    margin-bottom: 20px;
+}
+
+.tienda-construccion h2 {
+    margin: 30px 0 20px;
+    color: #064e7c;
+}
+
+.categorias-tienda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.categorias-tienda > div {
+    padding: 22px;
+    background: #e8f5fb;
+    border-radius: 12px;
+}
+
+.categorias-tienda i {
+    font-size: 32px;
+    color: #0879b9;
+    margin-bottom: 12px;
+}
+
+.categorias-tienda h3 {
+    margin-bottom: 10px;
+}
+
+.mensaje-proceso {
+    font-weight: bold;
+    color: #0879b9;
+    margin: 30px 0;
+}
+
+.regresar-tienda,
+.volver-inicio {
+    display: inline-block;
+    padding: 12px 20px;
+    color: white;
+    background: #0879b9;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.regresar-tienda:hover,
+.volver-inicio:hover {
+    background: #064e7c;
+}
+
+@media (max-width: 600px) {
+    .categorias-tienda {
+        grid-template-columns: 1fr;
+    }
+
+    .tienda-construccion {
+        padding: 25px 15px;
+    }
+}
