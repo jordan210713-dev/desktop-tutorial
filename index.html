@@ -3,30 +3,55 @@
 <html lang="es">
 
 <head>
+
+    <!-- ==========================================
+         1. CONFIGURACIÓN GENERAL
+         ========================================== -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Mundo de los Peces</title>
 
-    <!-- Conexión con CSS -->
+
+    <!-- ==========================================
+         2. CONEXIÓN CON CSS
+         ========================================== -->
+
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Íconos Font Awesome -->
+
+    <!-- ==========================================
+         3. ÍCONOS FONT AWESOME
+         ========================================== -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
-    <!-- Encabezado de la página -->
+    <!-- ==========================================
+         4. ENCABEZADO PRINCIPAL
+         ========================================== -->
+
     <header class="header">
+
+        <!-- LOGO -->
 
         <a href="index.html" class="logo">
             <i class="fa-solid fa-fish"></i>
             Mundo de los Peces
         </a>
 
-        <!-- Botón hamburguesa -->
+
+        <!-- ======================================
+             5. BOTÓN HAMBURGUESA
+             ====================================== -->
+
         <button class="hamburguesa"
                 id="boton-menu"
                 type="button"
@@ -40,8 +65,13 @@
 
         </button>
 
-        <!-- Menú de navegación -->
+
+        <!-- ======================================
+             6. MENÚ DE NAVEGACIÓN
+             ====================================== -->
+
         <nav class="menu" id="menu">
+
             <ul>
 
                 <li>
@@ -94,21 +124,36 @@
                 </li>
 
             </ul>
+
         </nav>
 
-<!-- Botón de acceso a la tienda -->
-<a href="tienda.html"
-   class="boton-tienda"
-   aria-label="Visitar tienda">
-    <i class="fa-solid fa-cart-shopping"></i>
-</a>
+
+        <!-- ======================================
+             7. BOTÓN DE LA TIENDA
+             ====================================== -->
+
+        <a href="tienda.html"
+           class="boton-tienda"
+           aria-label="Visitar tienda">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+        </a>
 
     </header>
 
-    <!-- Contenido principal -->
+
+    <!-- ==========================================
+         8. CONTENIDO PRINCIPAL
+         ========================================== -->
+
     <main>
 
-        <!-- Primera sección: Historia -->
+
+        <!-- ======================================
+             9. PRIMERA SECCIÓN: HISTORIA
+             ====================================== -->
+
         <section class="historia">
 
             <h1>Bienvenidos a Mundo de los Peces</h1>
@@ -127,7 +172,11 @@
 
         </section>
 
-        <!-- Segunda sección: Especies -->
+
+        <!-- ======================================
+             10. SEGUNDA SECCIÓN: ESPECIES
+             ====================================== -->
+
         <section class="equipo">
 
             <h2>Conoce nuestras especies</h2>
@@ -145,7 +194,11 @@
 
         </section>
 
-        <!-- Tercera sección: Servicios -->
+
+        <!-- ======================================
+             11. TERCERA SECCIÓN: SERVICIOS
+             ====================================== -->
+
         <section class="servicios">
 
             <h2>Nuestros servicios</h2>
@@ -164,7 +217,171 @@
 
         </section>
 
-        <!-- Cuarta sección: Galería -->
+
+        <!-- ======================================
+             12. CUARTA SECCIÓN: CARDS DE PECES
+             ====================================== -->
+
+        <section class="seccion-cards contenedor">
+
+            <h2>Conoce nuestros peces</h2>
+
+            <p>
+                Descubre algunas de las especies más
+                populares del mundo de los acuarios.
+            </p>
+
+
+            <!-- CONTENEDOR FLEXBOX -->
+
+            <div class="contenedor-cards">
+
+
+                <!-- CARD 1: GOLDFISH -->
+
+                <article class="card">
+
+                    <img src="img/historia1.jpg"
+                         alt="Pez Goldfish">
+
+                    <h3>Goldfish</h3>
+
+                    <p>
+                        Pez ornamental de agua dulce,
+                        conocido por sus colores,
+                        variedades y belleza.
+                    </p>
+
+                    <a href="orientales.html"
+                       class="boton-card">
+                        Ver más
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 2: AROWANA -->
+
+                <article class="card">
+
+                    <img src="img/historia2.jpg"
+                         alt="Pez Arowana">
+
+                    <h3>Arowana</h3>
+
+                    <p>
+                        Pez de agua dulce conocido por
+                        su cuerpo alargado y elegante.
+                    </p>
+
+                    <a href="orientales.html"
+                       class="boton-card">
+                        Ver más
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 3: PEZ DISCO -->
+
+                <article class="card">
+
+                    <img src="img/historia3.jpg"
+                         alt="Peces Disco">
+
+                    <h3>Pez Disco</h3>
+
+                    <p>
+                        Pez tropical de agua dulce
+                        reconocido por sus colores
+                        y su forma redondeada.
+                    </p>
+
+                    <a href="tropicales.html"
+                       class="boton-card">
+                        Ver más
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 4: PEZ GATO -->
+
+                <article class="card">
+
+                    <img src="img/historia4.jpg"
+                         alt="Pez gato de agua dulce">
+
+                    <h3>Pez Gato</h3>
+
+                    <p>
+                        Pez de agua dulce conocido
+                        por sus barbillas y sus
+                        diferentes variedades.
+                    </p>
+
+                    <a href="tropicales.html"
+                       class="boton-card">
+                        Ver más
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 5: PEZ BETTA -->
+
+                <article class="card">
+
+                    <img src="img/historia5.jpg"
+                         alt="Pez Betta de colores">
+
+                    <h3>Pez Betta</h3>
+
+                    <p>
+                        Pez tropical reconocido por
+                        sus colores llamativos y
+                        sus aletas vistosas.
+                    </p>
+
+                    <a href="tropicales.html"
+                       class="boton-card">
+                        Ver más
+                    </a>
+
+                </article>
+
+
+                <!-- CARD 6: PEZ KOI -->
+
+                <article class="card">
+
+                    <img src="img/historia6.jpg"
+                         alt="Pez Koi ornamental">
+
+                    <h3>Pez Koi</h3>
+
+                    <p>
+                        Pez ornamental muy popular
+                        en estanques por sus colores
+                        y su elegante apariencia.
+                    </p>
+
+                    <a href="orientales.html"
+                       class="boton-card">
+                        Ver más
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             13. QUINTA SECCIÓN: GALERÍA
+             ====================================== -->
+
         <section class="galeria">
 
             <h2>Galería de Mundo de los Peces</h2>
@@ -190,12 +407,154 @@
 
         </section>
 
+
+        <!-- ======================================
+             14. SEXTA SECCIÓN: PREGUNTAS FRECUENTES
+             ACCORDION - PROYECTO 2
+             ====================================== -->
+
+        <section class="seccion-accordion contenedor">
+
+            <h2>Preguntas frecuentes</h2>
+
+            <p>
+                Encuentra respuestas a algunas de las
+                preguntas más comunes sobre el cuidado
+                de los peces y acuarios.
+            </p>
+
+
+            <!-- CONTENEDOR PRINCIPAL DEL ACCORDION -->
+
+            <div class="accordion" id="accordion">
+
+
+                <!-- PREGUNTA 1 -->
+
+                <div class="item">
+
+                    <button class="titulo"
+                            type="button"
+                            aria-expanded="false">
+
+                        ¿Cada cuánto debo alimentar a mis peces?
+
+                        <span aria-hidden="true">+</span>
+
+                    </button>
+
+                    <div class="contenido">
+
+                        <p>
+                            La frecuencia depende de la especie
+                            y su edad. Muchos peces adultos
+                            pueden alimentarse una o dos veces
+                            al día, utilizando porciones adecuadas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREGUNTA 2 -->
+
+                <div class="item">
+
+                    <button class="titulo"
+                            type="button"
+                            aria-expanded="false">
+
+                        ¿Cada cuánto debo cambiar el agua del acuario?
+
+                        <span aria-hidden="true">+</span>
+
+                    </button>
+
+                    <div class="contenido">
+
+                        <p>
+                            En muchos acuarios se realizan cambios
+                            parciales de agua semanalmente.
+                            La cantidad depende de la población,
+                            la filtración y la calidad del agua.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREGUNTA 3 -->
+
+                <div class="item">
+
+                    <button class="titulo"
+                            type="button"
+                            aria-expanded="false">
+
+                        ¿Puedo mezclar diferentes especies de peces?
+
+                        <span aria-hidden="true">+</span>
+
+                    </button>
+
+                    <div class="contenido">
+
+                        <p>
+                            Sí, siempre que las especies sean
+                            compatibles en comportamiento,
+                            temperatura, tamaño y necesidades
+                            de agua.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREGUNTA 4 -->
+
+                <div class="item">
+
+                    <button class="titulo"
+                            type="button"
+                            aria-expanded="false">
+
+                        ¿Por qué es importante tener un filtro?
+
+                        <span aria-hidden="true">+</span>
+
+                    </button>
+
+                    <div class="contenido">
+
+                        <p>
+                            El filtro ayuda a retirar partículas
+                            del agua y permite alojar bacterias
+                            beneficiosas que procesan sustancias
+                            tóxicas producidas en el acuario.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <!-- Pie de página -->
+
+    <!-- ==========================================
+         15. PIE DE PÁGINA
+         ========================================== -->
+
     <footer>
 
         <div>
+
             <p>
                 <strong>Mundo de los Peces</strong>
             </p>
@@ -208,9 +567,14 @@
             <p>
                 Correo: contacto@ejemplo.com
             </p>
+
         </div>
 
-        <!-- Redes sociales -->
+
+        <!-- ======================================
+             16. REDES SOCIALES
+             ====================================== -->
+
         <ul class="redes">
 
             <li>
@@ -243,8 +607,12 @@
 
     </footer>
 
-    <!-- Conexión con JavaScript -->
-    <script src="js/main.js"></script>
+
+    <!-- ==========================================
+         17. CONEXIÓN CON JAVASCRIPT
+         ========================================== -->
+
+    <script src="js/main.js" defer></script>
 
 </body>
 </html>
