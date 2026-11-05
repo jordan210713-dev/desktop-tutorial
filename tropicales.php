@@ -18,92 +18,8 @@
 
 <body>
 
-    <!-- Encabezado principal -->
-    <header class="header">
-
-        <!-- Logo -->
-        <a href="index.html" class="logo">
-            <i class="fa-solid fa-fish"></i>
-            Mundo de los Peces
-        </a>
-
-        <!-- Botón hamburguesa -->
-        <button class="hamburguesa"
-                id="boton-menu"
-                type="button"
-                aria-label="Abrir menú"
-                aria-expanded="false"
-                aria-controls="menu">
-
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <!-- Menú de navegación -->
-        <nav class="menu" id="menu">
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        Inicio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="orientales.html">
-                        <i class="fa-solid fa-fish"></i>
-                        Peces Orientales
-                    </a>
-                </li>
-
-                <li>
-                    <a href="tropicales.html">
-                        <i class="fa-solid fa-water"></i>
-                        Peces Tropicales
-                    </a>
-                </li>
-
-                <li>
-                    <a href="agua-salada.html">
-                        <i class="fa-solid fa-anchor"></i>
-                        Agua Salada
-                    </a>
-                </li>
-
-                <li>
-                    <a href="nosotros.html">
-                        <i class="fa-solid fa-users"></i>
-                        Nosotros
-                    </a>
-                </li>
-
-                <li>
-                    <a href="servicios.html">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        Servicios
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contacto.html">
-                        <i class="fa-solid fa-envelope"></i>
-                        Contacto
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-        <!-- Botón de la tienda -->
-        <a href="tienda.html"
-           class="boton-tienda"
-           aria-label="Visitar tienda">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-
-    </header>
+    // HEADER PHP
+       <?php include 'header.php';?>
 
     <!-- Contenido principal -->
     <main>
@@ -294,51 +210,8 @@
 
     </main>
 
-    <!-- Pie de página -->
-    <footer>
-
-        <div>
-            <p><strong>Mundo de los Peces</strong></p>
-
-            <p>
-                Información sobre peces, acuarios,
-                alimentación y compatibilidad.
-            </p>
-
-            <p>Correo: contacto@ejemplo.com</p>
-        </div>
-
-        <ul class="redes">
-
-            <li>
-                <a href="https://www.facebook.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Facebook
-                </a>
-            </li>
-
-            <li>
-                <a href="https://twitter.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Twitter
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.instagram.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Instagram
-                </a>
-            </li>
-
-        </ul>
-
-        <p>&copy; 2026 Mundo de los Peces.</p>
-
-    </footer>
+    // FOOTER PHP
+<?php include 'footer.php';?>
 
     <!-- JavaScript -->
    <script src="js/main.js" defer></script>

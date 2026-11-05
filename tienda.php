@@ -16,17 +16,8 @@
 
 <body>
 
-    <header class="header">
-        <a href="index.html" class="logo">
-            <i class="fa-solid fa-fish"></i>
-            Mundo de los Peces
-        </a>
-
-        <a href="index.html" class="volver-inicio">
-            <i class="fa-solid fa-house"></i>
-            Inicio
-        </a>
-    </header>
+   // HEADER PHP
+       <?php include 'header.php';?>
 
     <main class="pagina-tienda">
 
@@ -90,10 +81,8 @@
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mundo de los Peces.</p>
-        <p>Próximamente, nuestra tienda y criadero.</p>
-    </footer>
+   // FOOTER PHP
+<?php include 'footer.php';?>
 <script src="js/main.js" defer></script>
 </body>
 </html>
