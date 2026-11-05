@@ -847,6 +847,146 @@ footer p {
     }
 }
 
+/* ==========================================
+  
+/* ==========================================
+   25. CARRUSEL DE IMÁGENES
+   ESTILO DE LA PROFESORA
+   ========================================== */
+
+.seccion-carrusel {
+    width: 100%;
+    padding: 25px 15px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 260px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #06283d;
+}
+
+/* IMÁGENES DEL CARRUSEL */
+
+.carrusel .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* IMAGEN ACTIVA */
+
+.carrusel .slide.activa {
+    display: block;
+}
+
+/* BOTONES ANTERIOR Y SIGUIENTE */
+
+.carrusel button {
+    position: absolute;
+    bottom: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* BOTÓN ANTERIOR */
+
+.carrusel #anterior {
+    left: 15px;
+}
+
+/* BOTÓN SIGUIENTE */
+
+.carrusel #siguiente {
+    right: 15px;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.carrusel button:hover {
+    background-color: #005f8f;
+}
+
+/* ==========================================
+   RESPONSIVE TABLET - 701 PX
+   ========================================== */
+
+@media (min-width: 701px) {
+
+    .carrusel {
+        height: 350px;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE ESCRITORIO - 991 PX
+   ========================================== */
+
+@media (min-width: 991px) {
+
+    .carrusel {
+        height: 430px;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE CELULAR - HASTA 500 PX
+   ========================================== */
+
+@media (max-width: 500px) {
+
+    .carrusel {
+        height: 220px;
+    }
+
+    .carrusel button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================
+   26. MENSAJES DEL FORMULARIO DE CONTACTO
+   ========================================== */
+
+.formulario #mensajes {
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* MENSAJE DE ERROR */
+
+.formulario #mensajes.error {
+    color: #b42318;
+}
+
+/* MENSAJE DE ÉXITO */
+
+.formulario #mensajes.exito {
+    color: #087443;
+}
+
 /* FIN DEL FORMULARIO DE CONTACTO */
 
 

@@ -43,8 +43,10 @@
         <!-- LOGO -->
 
         <a href="index.html" class="logo">
+
             <i class="fa-solid fa-fish"></i>
             Mundo de los Peces
+
         </a>
 
 
@@ -220,6 +222,7 @@
 
         <!-- ======================================
              12. CUARTA SECCIÓN: CARDS DE PECES
+             GENERADAS DESDE JAVASCRIPT
              ====================================== -->
 
         <section class="seccion-cards contenedor">
@@ -231,147 +234,16 @@
                 populares del mundo de los acuarios.
             </p>
 
-
             <!-- CONTENEDOR FLEXBOX -->
 
-            <div class="contenedor-cards">
+            <div class="contenedor-cards"
+                 id="contenedor-cards">
 
-
-                <!-- CARD 1: GOLDFISH -->
-
-                <article class="card">
-
-                    <img src="img/historia1.jpg"
-                         alt="Pez Goldfish">
-
-                    <h3>Goldfish</h3>
-
-                    <p>
-                        Pez ornamental de agua dulce,
-                        conocido por sus colores,
-                        variedades y belleza.
-                    </p>
-
-                    <a href="orientales.html"
-                       class="boton-card">
-                        Ver más
-                    </a>
-
-                </article>
-
-
-                <!-- CARD 2: AROWANA -->
-
-                <article class="card">
-
-                    <img src="img/historia2.jpg"
-                         alt="Pez Arowana">
-
-                    <h3>Arowana</h3>
-
-                    <p>
-                        Pez de agua dulce conocido por
-                        su cuerpo alargado y elegante.
-                    </p>
-
-                    <a href="orientales.html"
-                       class="boton-card">
-                        Ver más
-                    </a>
-
-                </article>
-
-
-                <!-- CARD 3: PEZ DISCO -->
-
-                <article class="card">
-
-                    <img src="img/historia3.jpg"
-                         alt="Peces Disco">
-
-                    <h3>Pez Disco</h3>
-
-                    <p>
-                        Pez tropical de agua dulce
-                        reconocido por sus colores
-                        y su forma redondeada.
-                    </p>
-
-                    <a href="tropicales.html"
-                       class="boton-card">
-                        Ver más
-                    </a>
-
-                </article>
-
-
-                <!-- CARD 4: PEZ GATO -->
-
-                <article class="card">
-
-                    <img src="img/historia4.jpg"
-                         alt="Pez gato de agua dulce">
-
-                    <h3>Pez Gato</h3>
-
-                    <p>
-                        Pez de agua dulce conocido
-                        por sus barbillas y sus
-                        diferentes variedades.
-                    </p>
-
-                    <a href="tropicales.html"
-                       class="boton-card">
-                        Ver más
-                    </a>
-
-                </article>
-
-
-                <!-- CARD 5: PEZ BETTA -->
-
-                <article class="card">
-
-                    <img src="img/historia5.jpg"
-                         alt="Pez Betta de colores">
-
-                    <h3>Pez Betta</h3>
-
-                    <p>
-                        Pez tropical reconocido por
-                        sus colores llamativos y
-                        sus aletas vistosas.
-                    </p>
-
-                    <a href="tropicales.html"
-                       class="boton-card">
-                        Ver más
-                    </a>
-
-                </article>
-
-
-                <!-- CARD 6: PEZ KOI -->
-
-                <article class="card">
-
-                    <img src="img/historia6.jpg"
-                         alt="Pez Koi ornamental">
-
-                    <h3>Pez Koi</h3>
-
-                    <p>
-                        Pez ornamental muy popular
-                        en estanques por sus colores
-                        y su elegante apariencia.
-                    </p>
-
-                    <a href="orientales.html"
-                       class="boton-card">
-                        Ver más
-                    </a>
-
-                </article>
+                <!--
+                    Las seis tarjetas se generan
+                    automáticamente desde js/main.js
+                    utilizando un arreglo de objetos.
+                -->
 
             </div>
 
@@ -382,26 +254,74 @@
              13. QUINTA SECCIÓN: GALERÍA
              ====================================== -->
 
-        <section class="galeria">
+        
+<!-- ==========================================
+     13. QUINTA SECCIÓN: GALERÍA
+     ========================================== -->
 
-            <h2>Galería de Mundo de los Peces</h2>
+<section class="galeria">
 
-            <p>
-                Conoce algunas de las especies de peces
-                ornamentales y descubre la belleza del
-                mundo de los acuarios.
-            </p>
+    <h2>Galería de Mundo de los Peces</h2>
 
-            <div class="fotos">
+    <p>
+        Conoce algunas de las especies de peces
+        ornamentales y descubre la belleza del
+        mundo de los acuarios.
+    </p>
 
-                <img src="img/historia1.jpg"
-                     alt="Peces ornamentales">
+</section>
 
-                <img src="img/historia2.jpg"
-                     alt="Acuarios y peces">
 
-                <img src="img/historia3.jpg"
-                     alt="Variedades de peces">
+
+        <!-- ==========================================
+             14. SEXTA SECCIÓN: CARRUSEL DE IMÁGENES
+             ESTILO UTILIZADO POR LA PROFESORA
+             ========================================== -->
+
+        <section class="seccion-carrusel"
+                 aria-label="Carrusel de peces">
+
+            <div class="carrusel">
+
+                <!-- IMAGEN 1 -->
+
+                <img class="slide activa"
+                     src="img/historia2.jpg"
+                     alt="Pez Arowana">
+
+
+                <!-- IMAGEN 2 -->
+
+                <img class="slide"
+                     src="img/historia3.jpg"
+                     alt="Peces Disco">
+
+
+                <!-- IMAGEN 3 -->
+
+                <img class="slide"
+                     src="img/historia1.jpg"
+                     alt="Goldfish ornamental">
+
+
+                <!-- BOTÓN ANTERIOR -->
+
+                <button id="anterior"
+                        type="button">
+
+                    Anterior
+
+                </button>
+
+
+                <!-- BOTÓN SIGUIENTE -->
+
+                <button id="siguiente"
+                        type="button">
+
+                    Siguiente
+
+                </button>
 
             </div>
 
@@ -409,7 +329,7 @@
 
 
         <!-- ======================================
-             14. SEXTA SECCIÓN: PREGUNTAS FRECUENTES
+             15. SÉPTIMA SECCIÓN: PREGUNTAS FRECUENTES
              ACCORDION - PROYECTO 2
              ====================================== -->
 
@@ -422,7 +342,6 @@
                 preguntas más comunes sobre el cuidado
                 de los peces y acuarios.
             </p>
-
 
             <!-- CONTENEDOR PRINCIPAL DEL ACCORDION -->
 
@@ -548,7 +467,7 @@
 
 
     <!-- ==========================================
-         15. PIE DE PÁGINA
+         16. PIE DE PÁGINA
          ========================================== -->
 
     <footer>
@@ -572,7 +491,7 @@
 
 
         <!-- ======================================
-             16. REDES SOCIALES
+             17. REDES SOCIALES
              ====================================== -->
 
         <ul class="redes">
@@ -581,7 +500,9 @@
                 <a href="https://www.facebook.com/"
                    target="_blank"
                    rel="noopener noreferrer">
+
                     Facebook
+
                 </a>
             </li>
 
@@ -589,7 +510,9 @@
                 <a href="https://twitter.com/"
                    target="_blank"
                    rel="noopener noreferrer">
+
                     Twitter
+
                 </a>
             </li>
 
@@ -597,7 +520,9 @@
                 <a href="https://www.instagram.com/"
                    target="_blank"
                    rel="noopener noreferrer">
+
                     Instagram
+
                 </a>
             </li>
 
@@ -609,7 +534,7 @@
 
 
     <!-- ==========================================
-         17. CONEXIÓN CON JAVASCRIPT
+         18. CONEXIÓN CON JAVASCRIPT
          ========================================== -->
 
     <script src="js/main.js" defer></script>
