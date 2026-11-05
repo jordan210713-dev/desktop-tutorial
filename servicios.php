@@ -205,7 +205,7 @@
             </p>
 
             <p>
-                <a href="contacto.html">Ir a Contacto</a>
+                <a href="contacto.php">Ir a Contacto</a>
             </p>
 
             <img src="img/servicio7.jpg"

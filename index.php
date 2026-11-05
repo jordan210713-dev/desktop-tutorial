@@ -351,9 +351,36 @@
         </section>
 
     </main>
- <!-- fooste php -->
-<?php include 'footer.php';?>
 
+
+
+        </section>
+
+        <!-- ======================================
+             16. OCTAVA SECCIÓN: CONTACTO
+             ====================================== -->
+
+        <section class="contacto contenedor">
+
+            <h2>
+                <i class="fa-solid fa-envelope"></i>
+                ¿Tienes alguna consulta?
+            </h2>
+
+            <p>
+                Si deseas compartir alguna pregunta
+                sobre acuarios, especies o alimentación,
+                puedes visitar nuestra sección de contacto.
+            </p>
+
+           <a href="contacto.php">Ir a Contacto</a>
+            
+        </section>
+
+    </main>
+
+    <!-- FOOTER PHP -->
+    <?php include 'footer.php'; ?>
     <script src="js/main.js" defer></script>
 
 </body>

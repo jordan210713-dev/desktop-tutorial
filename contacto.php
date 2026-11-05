@@ -76,7 +76,7 @@
 
     </main>
 
-    // FOOTER PHP
+    <!-- fooster php -->
 <?php include 'footer.php';?>
 
     <!-- Conexión con JavaScript -->

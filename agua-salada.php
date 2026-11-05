@@ -99,13 +99,13 @@
             </p>
 
             <p>
-                <a href="orientales.html">
+                <a href="orientales.php">
                     Conocer Peces Orientales
                 </a>
             </p>
 
             <p>
-                <a href="tropicales.html">
+                <a href="tropicales.php">
                     Conocer Peces Tropicales
                 </a>
             </p>
