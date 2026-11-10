@@ -20,7 +20,7 @@
 <body>
 
     <!-- Encabezado principal -->
-    // HEADER PHP
+    
        <?php include 'header.php';?>
 
     <!-- Contenido principal -->

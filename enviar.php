@@ -63,51 +63,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     /* ======================================
-       6. ENVIAR CORREO SI NO HAY ERRORES
+       6. VERIFICAR LAS VALIDACIONES
        ====================================== */
 
     if (count($errores) === 0) {
 
-        // Correo destinatario del proyecto
-        // Cambiar por una dirección real
+        // Todos los datos son correctos
+        // Redirigir a la página de agradecimiento
 
-        $destinatario = "contacto@ejemplo.com";
+        header("Location: gracias.php");
 
-        // Asunto del mensaje
-
-        $asunto = "Nuevo mensaje de contacto - Mundo de los Peces";
-
-        // Contenido del mensaje
-
-        $contenido = "Nombre: $nombre\n";
-        $contenido .= "Correo: $correo\n";
-        $contenido .= "Mensaje: $mensaje\n";
-
-        // Encabezados del correo
-
-        $cabeceras = "From: no-reply@ejemplo.com\r\n";
-        $cabeceras .= "Reply-To: $correo\r\n";
-
-        // Enviar correo electrónico
-
-        if (mail(
-            $destinatario,
-            $asunto,
-            $contenido,
-            $cabeceras
-        )) {
-
-            // Redirigir a la página de agradecimiento
-
-            header("Location: gracias.php");
-
-            exit;
-
-        } else {
-
-            $errores[] = "No se pudo enviar el mensaje. Inténtalo nuevamente.";
-
-        }
+        exit;
 
     }
 

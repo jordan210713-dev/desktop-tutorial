@@ -16,7 +16,7 @@
 
 <body>
 
-    // HEADER PHP
+    
        <?php include 'header.php';?>
 
     <main>
@@ -379,7 +379,7 @@
 
     </main>
 
-    // FOOTER PHP
+    
 <?php include 'footer.php';?>
 
     <!-- JavaScript -->

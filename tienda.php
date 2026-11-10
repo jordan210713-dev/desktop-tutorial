@@ -16,7 +16,7 @@
 
 <body>
 
-   // HEADER PHP
+   
        <?php include 'header.php';?>
 
     <main class="pagina-tienda">
@@ -81,7 +81,7 @@
 
     </main>
 
-   // FOOTER PHP
+   
 <?php include 'footer.php';?>
 <script src="js/main.js" defer></script>
 </body>
