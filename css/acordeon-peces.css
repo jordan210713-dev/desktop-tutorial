@@ -1,0 +1,147 @@
+
+/* ==========================================
+   MUNDO DE LOS PECES
+   ACORDEÓN PARA PÁGINAS INFORMATIVAS
+   ORIENTALES - TROPICALES - AGUA SALADA
+   ========================================== */
+
+/* ==========================================
+   1. CONTENEDOR PRINCIPAL
+   ========================================== */
+
+.acordeon-peces {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ==========================================
+   2. CADA SECCIÓN DESPLEGABLE
+   ========================================== */
+
+.acordeon-peces details {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================
+   3. ENCABEZADOS DE LAS PREGUNTAS
+   ========================================== */
+
+.acordeon-peces summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 20px;
+    background-color: #0077b6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.acordeon-peces summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ==========================================
+   4. SÍMBOLOS PARA ABRIR Y CERRAR
+   ========================================== */
+
+.acordeon-peces summary::after {
+    content: "+";
+    font-size: 25px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.acordeon-peces details[open] summary::after {
+    content: "−";
+}
+
+/* ==========================================
+   5. EFECTOS DEL ENCABEZADO
+   ========================================== */
+
+.acordeon-peces summary:hover,
+.acordeon-peces details[open] summary {
+    background-color: #005f8f;
+}
+
+.acordeon-peces summary:focus-visible {
+    outline: 3px solid #023e8a;
+    outline-offset: -3px;
+}
+
+/* ==========================================
+   6. CONTENIDO DE LAS RESPUESTAS
+   ========================================== */
+
+.acordeon-peces .contenido-pez {
+    padding: 20px;
+    background-color: white;
+    color: #333333;
+}
+
+.acordeon-peces .contenido-pez p {
+    padding: 0;
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.acordeon-peces .contenido-pez p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   7. LISTAS DE CARACTERÍSTICAS Y CUIDADOS
+   ========================================== */
+
+.acordeon-peces .contenido-pez ul,
+.acordeon-peces .contenido-pez ol {
+    margin: 10px 0;
+    padding-left: 25px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.acordeon-peces .contenido-pez li {
+    margin-bottom: 6px;
+}
+
+/* ==========================================
+   8. DISEÑO RESPONSIVE PARA CELULARES
+   ========================================== */
+
+@media (max-width: 500px) {
+    .acordeon-peces {
+        margin: 20px auto;
+        gap: 10px;
+    }
+
+    .acordeon-peces summary {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .acordeon-peces .contenido-pez {
+        padding: 15px;
+    }
+
+    .acordeon-peces .contenido-pez p {
+        font-size: 15px;
+    }
+}
+
+/* ==========================================
+   FIN DEL ACORDEÓN DE PECES
+   ========================================== */

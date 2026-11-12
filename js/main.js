@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* ==========================================
        3. ARREGLO DE OBJETOS - PECES
-       PROYECTO 2
        ========================================== */
 
     const peces = [
@@ -135,42 +134,42 @@ document.addEventListener("DOMContentLoaded", function () {
             nombre: "Goldfish",
             imagen: "img/historia1.jpg",
             descripcion: "Pez ornamental de agua dulce, conocido por sus colores, variedades y belleza.",
-            enlace: "orientales.html"
+            enlace: "orientales.php"
         },
 
         {
             nombre: "Arowana",
             imagen: "img/historia2.jpg",
             descripcion: "Pez de agua dulce conocido por su cuerpo alargado y elegante.",
-            enlace: "orientales.html"
+            enlace: "orientales.php"
         },
 
         {
             nombre: "Pez Disco",
             imagen: "img/historia3.jpg",
             descripcion: "Pez tropical de agua dulce reconocido por sus colores y su forma redondeada.",
-            enlace: "tropicales.html"
+            enlace: "tropicales.php"
         },
 
         {
             nombre: "Pez Gato",
             imagen: "img/historia4.jpg",
             descripcion: "Pez de agua dulce conocido por sus barbillas y sus diferentes variedades.",
-            enlace: "tropicales.html"
+            enlace: "tropicales.php"
         },
 
         {
             nombre: "Pez Betta",
             imagen: "img/historia5.jpg",
             descripcion: "Pez tropical reconocido por sus colores llamativos y sus aletas.",
-            enlace: "tropicales.html"
+            enlace: "tropicales.php"
         },
 
         {
             nombre: "Pez Koi",
             imagen: "img/historia6.jpg",
             descripcion: "Pez ornamental muy popular en estanques por sus colores y su belleza.",
-            enlace: "orientales.html"
+            enlace: "orientales.php"
         }
 
     ];
@@ -222,7 +221,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* ==========================================
        5. CARRUSEL DE IMÁGENES
-       ESTILO UTILIZADO POR LA PROFESORA
        ========================================== */
 
     // Obtener todas las imágenes del carrusel
@@ -280,8 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         mostrarSlide(0);
 
-
-        // BOTÓN ANTERIOR
+        // Botón anterior
 
         anterior.addEventListener("click", function () {
 
@@ -289,8 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
 
-
-        // BOTÓN SIGUIENTE
+        // Botón siguiente
 
         siguiente.addEventListener("click", function () {
 
@@ -316,12 +312,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         form.addEventListener("submit", function (e) {
 
-            // Evitar que el formulario se envíe
-            // porque aún no tenemos el archivo PHP
-
-            e.preventDefault();
-
-
             // Obtener los valores del formulario
 
             const nombre = form.elements["nombre"].value.trim();
@@ -329,7 +319,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const correo = form.elements["correo"].value.trim();
 
             const mensaje = form.elements["mensaje"].value.trim();
-
 
             // Crear el arreglo de errores
 
@@ -394,25 +383,40 @@ document.addEventListener("DOMContentLoaded", function () {
                     "exito"
                 );
 
+            }
 
-                // Mostrar los errores encontrados
 
-                if (errores.length > 0) {
+            // Verificar si existen errores
+
+            if (errores.length > 0) {
+
+                // Detener el envío solamente si hay errores
+
+                e.preventDefault();
+
+                if (mensajes) {
 
                     mensajes.textContent = errores.join(" ");
 
                     mensajes.classList.add("error");
 
-                } else {
+                }
 
-                    // Mostrar mensaje de validación correcta
+            } else {
+
+                // Datos correctos: permitir envío a enviar.php
+
+                if (mensajes) {
 
                     mensajes.textContent =
-                        "Formulario validado correctamente. Los datos están listos para enviarse.";
+                        "Formulario validado correctamente. Enviando...";
 
                     mensajes.classList.add("exito");
 
                 }
+
+                // No usamos preventDefault aquí.
+                // El formulario se enviará normalmente.
 
             }
 

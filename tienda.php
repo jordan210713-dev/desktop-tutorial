@@ -1,88 +1,97 @@
 
-<!DOCTYPE html>
-<html lang="es">
+<?php
+/* ==========================================
+   MUNDO DE LOS PECES
+   PÁGINA DE TIENDA
+   ========================================== */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* ==========================================
+   1. TÍTULO Y ENCABEZADO GENERAL
+   ========================================== */
+$titulo = "Tienda | Mundo de los Peces";
+include 'header.php';
+?>
 
-    <title>Tienda - Mundo de los Peces</title>
+<!-- ==========================================
+     2. CONTENIDO PRINCIPAL
+     ========================================== -->
+<main class="pagina-tienda">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ==========================================
+         3. PRESENTACIÓN DE LA TIENDA
+         ========================================== -->
+    <section class="tienda-construccion">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+        <i class="fa-solid fa-store icono-tienda"></i>
 
-<body>
+        <h1>¡Nuestra tienda está en camino!</h1>
 
-   
-       <?php include 'header.php';?>
+        <p>
+            Estamos trabajando para ofrecerte una tienda especializada
+            en peces ornamentales, acuarios, accesorios y productos
+            para su cuidado.
+        </p>
 
-    <main class="pagina-tienda">
+        <!-- ======================================
+             4. CATEGORÍAS DE LA TIENDA
+             ====================================== -->
+        <h2>Próximamente encontrarás</h2>
 
-        <section class="tienda-construccion">
+        <div class="categorias-tienda">
 
-            <i class="fa-solid fa-store icono-tienda"></i>
-
-            <h1>¡Nuestra tienda está en camino!</h1>
-
-            <p>
-                Estamos trabajando para ofrecerte
-                una tienda especializada en peces
-                ornamentales, acuarios, accesorios
-                y productos para su cuidado.
-            </p>
-
-            <h2>Próximamente encontrarás</h2>
-
-            <div class="categorias-tienda">
-
-                <div>
-                    <i class="fa-solid fa-fish"></i>
-                    <h3>Peces ornamentales</h3>
-                    <p>Goldfish, Koi, escalares, discos y más.</p>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-water"></i>
-                    <h3>Acuarios y equipos</h3>
-                    <p>Peceras, filtros, bombas y accesorios.</p>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-leaf"></i>
-                    <h3>Plantas y decoración</h3>
-                    <p>Plantas acuáticas, sustratos y adornos.</p>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-seedling"></i>
-                    <h3>Nuestro criadero</h3>
-                    <p>
-                        Un espacio dedicado a la reproducción
-                        y crianza responsable de peces ornamentales.
-                    </p>
-                </div>
-
+            <!-- 4.1 PECES ORNAMENTALES -->
+            <div>
+                <i class="fa-solid fa-fish"></i>
+                <h3>Peces ornamentales</h3>
+                <p>Goldfish, Koi, escalares, discos y más.</p>
             </div>
 
-            <p class="mensaje-proceso">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                Tienda en proceso de desarrollo
-            </p>
+            <!-- 4.2 ACUARIOS Y EQUIPOS -->
+            <div>
+                <i class="fa-solid fa-water"></i>
+                <h3>Acuarios y equipos</h3>
+                <p>Peceras, filtros, bombas y accesorios.</p>
+            </div>
 
-            <a href="index.html" class="regresar-tienda">
-                <i class="fa-solid fa-arrow-left"></i>
-                Regresar al inicio
-            </a>
+            <!-- 4.3 PLANTAS Y DECORACIÓN -->
+            <div>
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Plantas y decoración</h3>
+                <p>Plantas acuáticas, sustratos y adornos.</p>
+            </div>
 
-        </section>
+            <!-- 4.4 NUESTRO CRIADERO -->
+            <div>
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Nuestro criadero</h3>
+                <p>
+                    Un espacio dedicado a la reproducción
+                    y crianza responsable de peces ornamentales.
+                </p>
+            </div>
 
-    </main>
+        </div>
 
-   
-<?php include 'footer.php';?>
-<script src="js/main.js" defer></script>
-</body>
-</html>
+        <!-- ======================================
+             5. MENSAJE DE DESARROLLO
+             ====================================== -->
+        <p class="mensaje-proceso">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Tienda en proceso de desarrollo
+        </p>
+
+        <!-- ======================================
+             6. BOTÓN REGRESAR AL INICIO
+             ====================================== -->
+        <a href="index.php" class="regresar-tienda">
+            <i class="fa-solid fa-arrow-left"></i>
+            Regresar al inicio
+        </a>
+
+    </section>
+</main>
+
+<!-- ==========================================
+     7. FOOTER GENERAL DEL SITIO
+     ========================================== -->
+<?php include 'footer.php'; ?>

@@ -1,0 +1,298 @@
+
+/* ==========================================
+   MUNDO DE LOS PECES
+   MEJORAS VISUALES DEL SITIO
+   ========================================== */
+
+/* ==========================================
+   1. COLORES GENERALES
+   ========================================== */
+:root {
+    --fondo-mejorado: #edf7fb;
+    --tarjeta-blanca: #ffffff;
+    --titulo-azul: #003b70;
+    --texto-gris: #374151;
+    --azul-principal: #0077b6;
+    --azul-hover: #005f8f;
+    --sombra-suave: 0 5px 18px rgba(0, 60, 100, 0.10);
+}
+
+/* ==========================================
+   2. FONDO GENERAL
+   ========================================== */
+body {
+    background-color: var(--fondo-mejorado);
+    color: var(--texto-gris);
+}
+
+/* ==========================================
+   3. CONTENIDO PRINCIPAL
+   ========================================== */
+main:not(.pagina-tienda) {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   4. TARJETAS DE INFORMACIÓN
+   ========================================== */
+main:not(.pagina-tienda) > section.historia,
+main:not(.pagina-tienda) > section.equipo,
+main:not(.pagina-tienda) > section.servicios {
+    background: var(--tarjeta-blanca);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin: 0 auto 20px;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   5. TÍTULOS PRINCIPALES
+   ========================================== */
+main:not(.pagina-tienda) > section h1 {
+    color: var(--titulo-azul);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   6. TÍTULOS SECUNDARIOS
+   ========================================== */
+main:not(.pagina-tienda) > section h2 {
+    color: var(--titulo-azul);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   7. PÁRRAFOS Y LECTURA
+   ========================================== */
+main:not(.pagina-tienda) > section p {
+    color: var(--texto-gris);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto 15px;
+}
+
+/* ==========================================
+   8. LISTAS DE INFORMACIÓN
+   ========================================== */
+main:not(.pagina-tienda) > section ul,
+main:not(.pagina-tienda) > section ol {
+    color: var(--texto-gris);
+    line-height: 1.8;
+}
+
+/* ==========================================
+   9. IMÁGENES DE LAS SECCIONES
+   ========================================== */
+main:not(.pagina-tienda) .imagen-seccion {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   10. CONSERVAR LOS DESPLEGABLES
+   ========================================== */
+.acordeon-peces summary {
+    color: #ffffff;
+}
+
+.acordeon-peces .contenido-pez p {
+    color: var(--texto-gris);
+}
+
+/* ==========================================
+   11. TARJETAS DE PECES
+   ========================================== */
+main:not(.pagina-tienda) > section.seccion-cards {
+    background: var(--tarjeta-blanca);
+    border-radius: 16px;
+    padding: 35px 30px;
+    margin: 0 auto 25px;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* ==========================================
+   12. GALERÍA Y CARRUSEL UNIFICADOS
+   ========================================== */
+main:not(.pagina-tienda) > section.galeria {
+    background: var(--tarjeta-blanca);
+    border-radius: 16px 16px 0 0;
+    padding: 30px 25px 10px;
+    margin: 0 auto;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+main:not(.pagina-tienda) > section.seccion-carrusel {
+    background: var(--tarjeta-blanca);
+    border-radius: 0 0 16px 16px;
+    padding: 10px 25px 25px;
+    margin: 0 auto 25px;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* ==========================================
+   13. PREGUNTAS FRECUENTES
+   ========================================== */
+main:not(.pagina-tienda) > section.seccion-accordion {
+    background: var(--tarjeta-blanca);
+    border-radius: 16px;
+    padding: 35px 30px;
+    margin: 0 auto 25px;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* ==========================================
+   14. SECCIÓN DE CONTACTO CENTRADA
+   ========================================== */
+main:not(.pagina-tienda) > section.contacto {
+    background: var(--tarjeta-blanca);
+    border-radius: 16px;
+    padding: 35px 30px;
+    margin: 0 auto 25px;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+main:not(.pagina-tienda) > section.contacto h2,
+main:not(.pagina-tienda) > section.contacto p {
+    text-align: center;
+}
+
+/* ==========================================
+   15. BOTÓN DE CONTACTO
+   ========================================== */
+main:not(.pagina-tienda) > section.contacto > a {
+    display: inline-block;
+    background-color: var(--azul-principal);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+main:not(.pagina-tienda) > section.contacto > a:hover {
+    background-color: var(--azul-hover);
+    transform: translateY(-2px);
+}
+
+main:not(.pagina-tienda) > section.contacto > a:focus-visible {
+    outline: 3px solid var(--titulo-azul);
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   16. DISEÑO PARA TABLETAS
+   ========================================== */
+@media (max-width: 768px) {
+    main:not(.pagina-tienda) {
+        padding: 20px 12px;
+    }
+
+    main:not(.pagina-tienda) > section.historia,
+    main:not(.pagina-tienda) > section.equipo,
+    main:not(.pagina-tienda) > section.servicios {
+        padding: 22px 18px;
+        margin-bottom: 18px;
+    }
+
+    main:not(.pagina-tienda) > section.seccion-cards,
+    main:not(.pagina-tienda) > section.seccion-accordion,
+    main:not(.pagina-tienda) > section.contacto {
+        padding: 25px 18px;
+        margin-bottom: 18px;
+    }
+
+    main:not(.pagina-tienda) > section.galeria {
+        padding: 25px 18px 8px;
+    }
+
+    main:not(.pagina-tienda) > section.seccion-carrusel {
+        padding: 8px 18px 20px;
+        margin-bottom: 18px;
+    }
+
+    main:not(.pagina-tienda) > section h1 {
+        font-size: 26px;
+    }
+
+    main:not(.pagina-tienda) > section h2 {
+        font-size: 22px;
+    }
+}
+
+/* ==========================================
+   17. DISEÑO PARA CELULARES
+   ========================================== */
+@media (max-width: 480px) {
+    main:not(.pagina-tienda) {
+        padding: 15px 10px;
+    }
+
+    main:not(.pagina-tienda) > section.historia,
+    main:not(.pagina-tienda) > section.equipo,
+    main:not(.pagina-tienda) > section.servicios,
+    main:not(.pagina-tienda) > section.seccion-cards,
+    main:not(.pagina-tienda) > section.seccion-accordion,
+    main:not(.pagina-tienda) > section.contacto {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    main:not(.pagina-tienda) > section.galeria {
+        padding: 20px 15px 5px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    main:not(.pagina-tienda) > section.seccion-carrusel {
+        padding: 5px 15px 20px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    main:not(.pagina-tienda) > section h1 {
+        font-size: 24px;
+    }
+
+    main:not(.pagina-tienda) > section h2 {
+        font-size: 20px;
+    }
+
+    main:not(.pagina-tienda) > section p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    main:not(.pagina-tienda) > section.contacto > a {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+}
+
+/* ==========================================
+   FIN DE LAS MEJORAS VISUALES
+   ========================================== */

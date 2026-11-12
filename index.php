@@ -1,40 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
-    <!-- ==========================================
-         1. CONFIGURACIÓN GENERAL
-         ========================================== -->
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Mundo de los Peces</title>
-
-
-    <!-- ==========================================
-         2. CONEXIÓN CON CSS
-         ========================================== -->
-
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <!-- ==========================================
-         3. ÍCONOS FONT AWESOME
-         ========================================== -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-</head>
-
-<body>
-  <!-- header php -->
-       <?php include 'header.php';?>
+<?php
+$titulo = "Inicio | Mundo de los Peces";
+include "header.php";
+?>
 
     <main>
 
@@ -61,10 +28,10 @@
 
         </section>
 
-
         <!-- ======================================
              10. SEGUNDA SECCIÓN: ESPECIES
              ====================================== -->
+
 
         <section class="equipo">
 
@@ -122,8 +89,7 @@
             </p>
 
             <!-- CONTENEDOR FLEXBOX -->
-
-            <div class="contenedor-cards"
+<div class="contenedor-cards"
                  id="contenedor-cards">
 
                 <!--
@@ -137,9 +103,6 @@
         </section>
 
 
-        <!-- ======================================
-             13. QUINTA SECCIÓN: GALERÍA
-             ====================================== -->
 
         
 <!-- ==========================================
@@ -189,9 +152,7 @@
                 <img class="slide"
                      src="img/historia1.jpg"
                      alt="Goldfish ornamental">
-
-
-                <!-- BOTÓN ANTERIOR -->
+                      <!-- BOTÓN ANTERIOR -->
 
                 <button id="anterior"
                         type="button">
@@ -215,146 +176,115 @@
         </section>
 
 
-        <!-- ======================================
-             15. SÉPTIMA SECCIÓN: PREGUNTAS FRECUENTES
-             ACCORDION - PROYECTO 2
-             ====================================== -->
+       
+<!-- ======================================
+     15. SÉPTIMA SECCIÓN: PREGUNTAS FRECUENTES
+     ====================================== -->
 
-        <section class="seccion-accordion contenedor">
+<section class="seccion-accordion contenedor">
 
-            <h2>Preguntas frecuentes</h2>
+    <h2>Preguntas frecuentes</h2>
 
-            <p>
-                Encuentra respuestas a algunas de las
-                preguntas más comunes sobre el cuidado
-                de los peces y acuarios.
-            </p>
+    <p>
+        Encuentra respuestas a algunas de las preguntas
+        más comunes sobre el cuidado de los peces y acuarios.
+    </p>
 
-            <!-- CONTENEDOR PRINCIPAL DEL ACCORDION -->
+    <div class="accordion" id="accordion">
 
-            <div class="accordion" id="accordion">
+        <!-- PREGUNTA 1 -->
+        <div class="item">
 
+            <button class="titulo"
+                    type="button"
+                    aria-expanded="false">
 
-                <!-- PREGUNTA 1 -->
+                ¿Cada cuánto debo alimentar a mis peces?
 
-                <div class="item">
+                <span aria-hidden="true">+</span>
+            </button>
 
-                    <button class="titulo"
-                            type="button"
-                            aria-expanded="false">
-
-                        ¿Cada cuánto debo alimentar a mis peces?
-
-                        <span aria-hidden="true">+</span>
-
-                    </button>
-
-                    <div class="contenido">
-
-                        <p>
-                            La frecuencia depende de la especie
-                            y su edad. Muchos peces adultos
-                            pueden alimentarse una o dos veces
-                            al día, utilizando porciones adecuadas.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PREGUNTA 2 -->
-
-                <div class="item">
-
-                    <button class="titulo"
-                            type="button"
-                            aria-expanded="false">
-
-                        ¿Cada cuánto debo cambiar el agua del acuario?
-
-                        <span aria-hidden="true">+</span>
-
-                    </button>
-
-                    <div class="contenido">
-
-                        <p>
-                            En muchos acuarios se realizan cambios
-                            parciales de agua semanalmente.
-                            La cantidad depende de la población,
-                            la filtración y la calidad del agua.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PREGUNTA 3 -->
-
-                <div class="item">
-
-                    <button class="titulo"
-                            type="button"
-                            aria-expanded="false">
-
-                        ¿Puedo mezclar diferentes especies de peces?
-
-                        <span aria-hidden="true">+</span>
-
-                    </button>
-
-                    <div class="contenido">
-
-                        <p>
-                            Sí, siempre que las especies sean
-                            compatibles en comportamiento,
-                            temperatura, tamaño y necesidades
-                            de agua.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PREGUNTA 4 -->
-
-                <div class="item">
-
-                    <button class="titulo"
-                            type="button"
-                            aria-expanded="false">
-
-                        ¿Por qué es importante tener un filtro?
-
-                        <span aria-hidden="true">+</span>
-
-                    </button>
-
-                    <div class="contenido">
-
-                        <p>
-                            El filtro ayuda a retirar partículas
-                            del agua y permite alojar bacterias
-                            beneficiosas que procesan sustancias
-                            tóxicas producidas en el acuario.
-                        </p>
-
-                    </div>
-
-                </div>
-
+            <div class="contenido">
+                <p>
+                    La frecuencia depende de la especie y su edad.
+                    Muchos peces adultos pueden alimentarse una
+                    o dos veces al día, utilizando porciones adecuadas.
+                </p>
             </div>
 
-        </section>
+        </div>
 
-    </main>
+        <!-- PREGUNTA 2 -->
+        <div class="item">
 
+            <button class="titulo"
+                    type="button"
+                    aria-expanded="false">
 
+                ¿Cada cuánto debo cambiar el agua del acuario?
 
-        </section>
+                <span aria-hidden="true">+</span>
+            </button>
+
+            <div class="contenido">
+                <p>
+                    En muchos acuarios se realizan cambios parciales
+                    de agua semanalmente. La cantidad depende de
+                    la población, la filtración y la calidad del agua.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- PREGUNTA 3 -->
+        <div class="item">
+
+            <button class="titulo"
+                    type="button"
+                    aria-expanded="false">
+
+                ¿Puedo mezclar diferentes especies de peces?
+
+                <span aria-hidden="true">+</span>
+            </button>
+
+            <div class="contenido">
+                <p>
+                    Sí, siempre que las especies sean compatibles
+                    en comportamiento, temperatura, tamaño
+                    y necesidades de agua.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- PREGUNTA 4 -->
+        <div class="item">
+
+            <button class="titulo"
+                    type="button"
+                    aria-expanded="false">
+
+                ¿Por qué es importante tener un filtro?
+
+                <span aria-hidden="true">+</span>
+            </button>
+
+            <div class="contenido">
+                <p>
+                    El filtro ayuda a retirar partículas del agua
+                    y permite alojar bacterias beneficiosas que
+                    procesan sustancias tóxicas producidas
+                    en el acuario.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
         <!-- ======================================
              16. OCTAVA SECCIÓN: CONTACTO
@@ -381,7 +311,3 @@
 
     <!-- FOOTER PHP -->
     <?php include 'footer.php'; ?>
-    <script src="js/main.js" defer></script>
-
-</body>
-</html>

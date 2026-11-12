@@ -1,86 +1,70 @@
 
-<!DOCTYPE html>
-<html lang="es">
+<?php
+/* ==========================================
+   MUNDO DE LOS PECES
+   PÁGINA DE CONTACTO
+   ========================================== */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+/* ==========================================
+   1. TÍTULO Y ENCABEZADO GENERAL
+   ========================================== */
+$titulo = "Contacto | Mundo de los Peces";
+include 'header.php';
+?>
 
-    <title>Contacto - Mundo de los Peces</title>
+<!-- ==========================================
+     2. CONTENIDO PRINCIPAL
+     ========================================== -->
+<main>
 
-    <!-- Conexión con CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ======================================
+         3. FORMULARIO DE CONTACTO
+         ====================================== -->
+    <form action="enviar.php" method="post"
+          class="formulario" id="formulario-contacto" novalidate>
 
-    <!-- Íconos Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+        <!-- 3.1 TÍTULO Y DESCRIPCIÓN -->
+        <h1><i class="fa-solid fa-envelope"></i> Contáctanos</h1>
+        <p>
+            ¿Tienes dudas sobre el cuidado de tus peces
+            o la compatibilidad entre especies?
+            Envíanos tu consulta.
+        </p>
 
-<body>
+        <!-- ======================================
+             4. CAMPO NOMBRE
+             ====================================== -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-    <!-- Encabezado principal -->
-    
-       <?php include 'header.php';?>
+        <!-- ======================================
+             5. CAMPO CORREO ELECTRÓNICO
+             ====================================== -->
+        <label for="correo">Email:</label>
+        <input type="email" id="correo" name="correo" required>
 
-    <!-- Contenido principal -->
-    <main>
+        <!-- ======================================
+             6. CAMPO MENSAJE
+             ====================================== -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-        <!-- Formulario de contacto -->
-        <form action="enviar.php"
-              method="post"
-              class="formulario">
+        <!-- ======================================
+             7. MENSAJES DE VALIDACIÓN
+             ====================================== -->
+        <div id="mensajes" role="alert" aria-live="polite"></div>
 
-            <h1>
-                <i class="fa-solid fa-envelope"></i>
-                Contáctanos
-            </h1>
+        <!-- ======================================
+             8. BOTÓN ENVIAR
+             ====================================== -->
+        <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Enviar
+        </button>
 
-            <p>
-                ¿Tienes dudas sobre el cuidado de tus peces
-                o la compatibilidad entre especies?
-                Envíanos tu consulta.
-            </p>
+    </form>
+</main>
 
-            <!-- Nombre -->
-            <label for="nombre">Nombre:</label>
-
-            <input type="text"
-                   id="nombre"
-                   name="nombre"
-                   required>
-
-            <!-- Correo -->
-            <label for="correo">Email:</label>
-
-            <input type="email"
-                   id="correo"
-                   name="correo"
-                   required>
-
-            <!-- Mensaje -->
-            <label for="mensaje">Mensaje:</label>
-
-            <textarea id="mensaje"
-                      name="mensaje"
-                      rows="5"
-                      required></textarea>
-
-            <!-- Botón enviar -->
-            <button type="submit">
-                <i class="fa-solid fa-paper-plane"></i>
-                Enviar
-            </button>
-
-        </form>
-
-    </main>
-
-    <!-- fooster php -->
-<?php include 'footer.php';?>
-
-    <!-- Conexión con JavaScript -->
-    <script src="js/main.js" defer></script>
-
-</body>
-</html>
+<!-- ==========================================
+     9. FOOTER GENERAL DEL SITIO
+     ========================================== -->
+<?php include 'footer.php'; ?>

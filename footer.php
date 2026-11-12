@@ -1,61 +1,70 @@
- <footer>
 
-        <div>
+<!-- ==========================================
+     MUNDO DE LOS PECES
+     PIE DE PÁGINA GENERAL
+     ========================================== -->
 
-            <p>
-                <strong>Mundo de los Peces</strong>
-            </p>
+<footer>
 
-            <p>
-                Información sobre peces, acuarios,
-                alimentación y compatibilidad.
-            </p>
+    <div>
 
-            <p>
-                Correo: contacto@ejemplo.com
-            </p>
+        <p>
+            <strong>Mundo de los Peces</strong>
+        </p>
 
-        </div>
+        <p>
+            Información sobre peces, acuarios,
+            alimentación y compatibilidad.
+        </p>
+
+        <p>
+            Correo: contacto@ejemplo.com
+        </p>
+
+    </div>
 
 
-        <!-- ======================================
-             17. REDES SOCIALES
-             ====================================== -->
+    <!-- ======================================
+         17. REDES SOCIALES
+         ====================================== -->
 
-        <ul class="redes">
+    <ul class="redes">
 
-            <li>
-                <a href="https://www.facebook.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
+        <li>
+            <a href="https://www.facebook.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Facebook
+            </a>
+        </li>
 
-                    Facebook
+        <li>
+            <a href="https://twitter.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Twitter
+            </a>
+        </li>
 
-                </a>
-            </li>
+        <li>
+            <a href="https://www.instagram.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Instagram
+            </a>
+        </li>
 
-            <li>
-                <a href="https://twitter.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
+    </ul>
 
-                    Twitter
+    <p>&copy; 2026 Mundo de los Peces.</p>
 
-                </a>
-            </li>
+</footer>
 
-            <li>
-                <a href="https://www.instagram.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">
+<!-- ==========================================
+     ARCHIVO JAVASCRIPT GENERAL
+     ========================================== -->
 
-                    Instagram
+<script src="js/main.js" defer></script>
 
-                </a>
-            </li>
-
-        </ul>
-
-        <p>&copy; 2026 Mundo de los Peces.</p>
-
-    </footer>
+</body>
+</html>
