@@ -128,7 +128,295 @@ main:not(.pagina-tienda) > section.seccion-cards {
 }
 
 /* ==========================================
-   12. GALERÍA Y CARRUSEL UNIFICADOS
+   12. BUSCADOR DE PECES EN TIEMPO REAL
+   PRIMERA FUNCIONALIDAD NUEVA
+   ========================================== */
+
+/* Contenedor general del buscador */
+main:not(.pagina-tienda) .contenedor-buscador {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto 30px;
+    padding: 22px 25px;
+    background: #f1f9fd;
+    border: 1px solid #d5eaf5;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 60, 100, 0.06);
+    box-sizing: border-box;
+}
+
+/* Texto que identifica el buscador */
+main:not(.pagina-tienda) .contenedor-buscador label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--titulo-azul);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Campo donde se escribe el nombre del pez */
+main:not(.pagina-tienda) #buscador-peces {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #b7d9ec;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: var(--texto-gris);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.4;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Texto de ejemplo dentro del buscador */
+main:not(.pagina-tienda) #buscador-peces::placeholder {
+    color: #687b8a;
+    opacity: 1;
+}
+
+/* Efecto al seleccionar el campo */
+main:not(.pagina-tienda) #buscador-peces:focus {
+    outline: none;
+    border-color: var(--azul-principal);
+    box-shadow: 0 0 0 4px rgba(0, 119, 182, 0.15);
+}
+
+/* ==========================================
+   13. MENSAJE CUANDO NO HAY RESULTADOS
+   ========================================== */
+
+/* Mensaje generado desde JavaScript */
+main:not(.pagina-tienda) .contenedor-cards .sin-resultados {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 22px 18px;
+    background-color: #f1f9fd;
+    border: 1px dashed #8abed9;
+    border-radius: 12px;
+    color: var(--titulo-azul);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   14. SECCIÓN DE LA CALCULADORA DE ACUARIOS
+   SEGUNDA FUNCIONALIDAD NUEVA
+   ========================================== */
+
+/* Tarjeta principal de la calculadora */
+main:not(.pagina-tienda) > section.seccion-calculadora {
+    background: var(--tarjeta-blanca);
+    border-radius: 16px;
+    padding: 35px 30px;
+    margin: 0 auto 25px;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Título e ícono de la calculadora */
+main:not(.pagina-tienda) .seccion-calculadora h2 {
+    text-align: center;
+}
+
+main:not(.pagina-tienda) .seccion-calculadora h2 i {
+    color: var(--azul-principal);
+    margin-right: 8px;
+}
+
+/* Descripción de la calculadora */
+main:not(.pagina-tienda) .seccion-calculadora > p {
+    text-align: center;
+}
+
+/* ==========================================
+   15. FORMULARIO Y BOTONES DE LA CALCULADORA
+   ========================================== */
+
+/* Distribuir las medidas en tres columnas */
+main:not(.pagina-tienda) #formulario-calculadora {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px;
+    background: #f1f9fd;
+    border: 1px solid #d5eaf5;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+/* Contenedor individual de cada medida */
+main:not(.pagina-tienda) .campo-calculadora {
+    min-width: 0;
+}
+
+/* Etiquetas de largo, ancho y alto */
+main:not(.pagina-tienda) .campo-calculadora label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--titulo-azul);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Campos numéricos de la calculadora */
+main:not(.pagina-tienda) .campo-calculadora input {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    border: 2px solid #b7d9ec;
+    border-radius: 10px;
+    background: #ffffff;
+    color: var(--texto-gris);
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Texto de ejemplo de los campos */
+main:not(.pagina-tienda) .campo-calculadora input::placeholder {
+    color: #687b8a;
+    opacity: 1;
+}
+
+/* Efecto al seleccionar una medida */
+main:not(.pagina-tienda) .campo-calculadora input:focus {
+    outline: none;
+    border-color: var(--azul-principal);
+    box-shadow: 0 0 0 4px rgba(0, 119, 182, 0.15);
+}
+
+/* Contenedor de los botones */
+main:not(.pagina-tienda) .botones-calculadora {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+/* Diseño general de los botones */
+main:not(.pagina-tienda) .botones-calculadora button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Botón principal para calcular */
+main:not(.pagina-tienda) #calcular-acuario {
+    background: var(--azul-principal);
+    color: #ffffff;
+}
+
+/* Efecto del botón Calcular */
+main:not(.pagina-tienda) #calcular-acuario:hover {
+    background: var(--azul-hover);
+    transform: translateY(-2px);
+}
+
+/* Botón para limpiar */
+main:not(.pagina-tienda) #limpiar-calculadora {
+    background: #dcecf5;
+    color: var(--titulo-azul);
+}
+
+/* Efecto del botón Limpiar */
+main:not(.pagina-tienda) #limpiar-calculadora:hover {
+    background: #c5e0ef;
+    transform: translateY(-2px);
+}
+
+/* Accesibilidad para ambos botones */
+main:not(.pagina-tienda) .botones-calculadora button:focus-visible {
+    outline: 3px solid var(--titulo-azul);
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   16. RESULTADOS DE LA CALCULADORA
+   ========================================== */
+
+/* Espacio donde JavaScript muestra el resultado */
+main:not(.pagina-tienda) .resultado-calculadora {
+    max-width: 650px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Ocultar el contenedor mientras esté vacío */
+main:not(.pagina-tienda) .resultado-calculadora:empty {
+    display: none;
+}
+
+/* Resultado cuando las medidas son correctas */
+main:not(.pagina-tienda) .resultado-calculadora.exito {
+    padding: 25px 20px;
+    background: #e8f7fc;
+    border: 2px solid #86cce9;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 60, 100, 0.06);
+}
+
+/* Título del resultado */
+main:not(.pagina-tienda) .resultado-calculadora h3 {
+    margin: 0 0 15px;
+    color: var(--titulo-azul);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Cantidad calculada de litros y galones */
+main:not(.pagina-tienda) .resultado-calculadora.exito p {
+    margin: 8px auto;
+    color: var(--titulo-azul);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* Mensaje cuando las medidas son incorrectas */
+main:not(.pagina-tienda) .resultado-calculadora.error {
+    padding: 18px 20px;
+    background: #fff1f2;
+    border: 1px solid #f4a5ad;
+    border-radius: 12px;
+    color: #9f1239;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Nota informativa debajo de la calculadora */
+main:not(.pagina-tienda) .seccion-calculadora .nota-calculadora {
+    max-width: 750px;
+    margin: 20px auto 0;
+    color: #536575;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* ==========================================
+   17. GALERÍA Y CARRUSEL UNIFICADOS
    ========================================== */
 main:not(.pagina-tienda) > section.galeria {
     background: var(--tarjeta-blanca);
@@ -151,7 +439,7 @@ main:not(.pagina-tienda) > section.seccion-carrusel {
 }
 
 /* ==========================================
-   13. PREGUNTAS FRECUENTES
+   18. PREGUNTAS FRECUENTES
    ========================================== */
 main:not(.pagina-tienda) > section.seccion-accordion {
     background: var(--tarjeta-blanca);
@@ -164,7 +452,7 @@ main:not(.pagina-tienda) > section.seccion-accordion {
 }
 
 /* ==========================================
-   14. SECCIÓN DE CONTACTO CENTRADA
+   19. SECCIÓN DE CONTACTO CENTRADA
    ========================================== */
 main:not(.pagina-tienda) > section.contacto {
     background: var(--tarjeta-blanca);
@@ -183,7 +471,7 @@ main:not(.pagina-tienda) > section.contacto p {
 }
 
 /* ==========================================
-   15. BOTÓN DE CONTACTO
+   20. BOTÓN DE CONTACTO
    ========================================== */
 main:not(.pagina-tienda) > section.contacto > a {
     display: inline-block;
@@ -207,7 +495,7 @@ main:not(.pagina-tienda) > section.contacto > a:focus-visible {
 }
 
 /* ==========================================
-   16. DISEÑO PARA TABLETAS
+   21. DISEÑO PARA TABLETAS
    ========================================== */
 @media (max-width: 768px) {
     main:not(.pagina-tienda) {
@@ -222,6 +510,7 @@ main:not(.pagina-tienda) > section.contacto > a:focus-visible {
     }
 
     main:not(.pagina-tienda) > section.seccion-cards,
+    main:not(.pagina-tienda) > section.seccion-calculadora,
     main:not(.pagina-tienda) > section.seccion-accordion,
     main:not(.pagina-tienda) > section.contacto {
         padding: 25px 18px;
@@ -244,10 +533,30 @@ main:not(.pagina-tienda) > section.contacto > a:focus-visible {
     main:not(.pagina-tienda) > section h2 {
         font-size: 22px;
     }
+
+    /* Adaptar el buscador a las tabletas */
+    main:not(.pagina-tienda) .contenedor-buscador {
+        padding: 20px;
+        margin: 20px auto 25px;
+    }
+
+    /* Adaptar la calculadora a las tabletas */
+    main:not(.pagina-tienda) #formulario-calculadora {
+        gap: 12px;
+        padding: 20px 15px;
+    }
+
+    main:not(.pagina-tienda) .campo-calculadora label {
+        font-size: 14px;
+    }
+
+    main:not(.pagina-tienda) .campo-calculadora input {
+        padding: 12px 10px;
+    }
 }
 
 /* ==========================================
-   17. DISEÑO PARA CELULARES
+   22. DISEÑO PARA CELULARES
    ========================================== */
 @media (max-width: 480px) {
     main:not(.pagina-tienda) {
@@ -258,6 +567,7 @@ main:not(.pagina-tienda) > section.contacto > a:focus-visible {
     main:not(.pagina-tienda) > section.equipo,
     main:not(.pagina-tienda) > section.servicios,
     main:not(.pagina-tienda) > section.seccion-cards,
+    main:not(.pagina-tienda) > section.seccion-calculadora,
     main:not(.pagina-tienda) > section.seccion-accordion,
     main:not(.pagina-tienda) > section.contacto {
         padding: 20px 15px;
@@ -291,8 +601,699 @@ main:not(.pagina-tienda) > section.contacto > a:focus-visible {
         padding: 11px 20px;
         font-size: 14px;
     }
+
+    /* Adaptar el buscador a pantallas pequeñas */
+    main:not(.pagina-tienda) .contenedor-buscador {
+        padding: 16px 14px;
+        margin: 18px auto 22px;
+        border-radius: 12px;
+    }
+
+    main:not(.pagina-tienda) .contenedor-buscador label {
+        font-size: 15px;
+    }
+
+    main:not(.pagina-tienda) #buscador-peces {
+        padding: 12px 13px;
+        font-size: 16px;
+    }
+
+    main:not(.pagina-tienda) .contenedor-cards .sin-resultados {
+        padding: 18px 12px;
+        font-size: 14px;
+    }
+
+    /* Mostrar las medidas una debajo de otra */
+    main:not(.pagina-tienda) #formulario-calculadora {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 18px 15px;
+        margin: 20px auto;
+    }
+
+    /* Ajustar los campos de la calculadora */
+    main:not(.pagina-tienda) .campo-calculadora label {
+        font-size: 15px;
+    }
+
+    main:not(.pagina-tienda) .campo-calculadora input {
+        padding: 12px 13px;
+        font-size: 16px;
+    }
+
+    /* Botones adaptados al celular */
+    main:not(.pagina-tienda) .botones-calculadora {
+        grid-column: 1;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main:not(.pagina-tienda) .botones-calculadora button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Ajustar los resultados en celulares */
+    main:not(.pagina-tienda) .resultado-calculadora.exito {
+        padding: 20px 12px;
+    }
+
+    main:not(.pagina-tienda) .resultado-calculadora h3 {
+        font-size: 17px;
+    }
+
+    main:not(.pagina-tienda) .resultado-calculadora.exito p {
+        font-size: 16px;
+    }
+
+    main:not(.pagina-tienda) .seccion-calculadora .nota-calculadora {
+        font-size: 13px;
+    }
+}
+
+/* ==========================================
+   23. BOTÓN DEL MODO OSCURO
+   TERCERA FUNCIONALIDAD NUEVA
+   ========================================== */
+/* Botón de luna/sol ubicado junto al carrito */
+.header #boton-tema {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+.header #boton-tema:hover {
+    background: rgba(255, 255, 255, 0.27);
+    transform: translateY(-2px);
+}
+.header #boton-tema:focus-visible {
+    outline: 3px solid #facc15;
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   24. PALETA DE COLORES DEL MODO OSCURO
+   ========================================== */
+/* Estas variables sustituyen las del modo claro. */
+html.modo-oscuro {
+    color-scheme: dark;
+    --fondo-mejorado: #0c1725;
+    --tarjeta-blanca: #172638;
+    --titulo-azul: #a9dfff;
+    --texto-gris: #e0eaf4;
+    --azul-principal: #168ac8;
+    --azul-hover: #0874af;
+    --sombra-suave: 0 6px 22px rgba(0, 0, 0, 0.30);
+}
+html.modo-oscuro body {
+    background-color: var(--fondo-mejorado);
+    color: var(--texto-gris);
+}
+
+/* ==========================================
+   25. ENCABEZADO Y NAVEGACIÓN OSCUROS
+   ========================================== */
+html.modo-oscuro .header {
+    background-color: #102235;
+    color: #f3f8ff;
+}
+html.modo-oscuro .header .logo,
+html.modo-oscuro .header .menu a,
+html.modo-oscuro .header .boton-tienda {
+    color: #f3f8ff;
+}
+html.modo-oscuro .header .menu {
+    background-color: #102235;
+}
+html.modo-oscuro .header #boton-tema {
+    background-color: #294a65;
+    color: #ffe18a;
+    border-color: #527b9a;
+}
+html.modo-oscuro .header #boton-tema:hover {
+    background-color: #38627e;
+}
+
+/* ==========================================
+   26. TARJETAS, TEXTOS Y ENLACES OSCUROS
+   ========================================== */
+html.modo-oscuro main:not(.pagina-tienda) > section.historia,
+html.modo-oscuro main:not(.pagina-tienda) > section.equipo,
+html.modo-oscuro main:not(.pagina-tienda) > section.servicios,
+html.modo-oscuro main:not(.pagina-tienda) > section.seccion-cards,
+html.modo-oscuro main:not(.pagina-tienda) > section.seccion-calculadora,
+html.modo-oscuro main:not(.pagina-tienda) > section.galeria,
+html.modo-oscuro main:not(.pagina-tienda) > section.seccion-carrusel,
+html.modo-oscuro main:not(.pagina-tienda) > section.seccion-accordion,
+html.modo-oscuro main:not(.pagina-tienda) > section.contacto {
+    background-color: var(--tarjeta-blanca);
+    color: var(--texto-gris);
+}
+html.modo-oscuro main:not(.pagina-tienda) > section h1,
+html.modo-oscuro main:not(.pagina-tienda) > section h2,
+html.modo-oscuro main:not(.pagina-tienda) > section h3,
+html.modo-oscuro main:not(.pagina-tienda) > section p,
+html.modo-oscuro main:not(.pagina-tienda) > section li {
+    color: var(--texto-gris);
+}
+html.modo-oscuro main:not(.pagina-tienda) > section h1,
+html.modo-oscuro main:not(.pagina-tienda) > section h2,
+html.modo-oscuro main:not(.pagina-tienda) > section h3 {
+    color: var(--titulo-azul);
+}
+/* Tarjetas de peces generadas desde JavaScript */
+html.modo-oscuro .contenedor-cards .card,
+html.modo-oscuro .seccion-cards .card {
+    background-color: #20344a;
+    color: var(--texto-gris);
+    border-color: #37536c;
+}
+html.modo-oscuro .contenedor-cards .card p,
+html.modo-oscuro .contenedor-cards .card h3 {
+    color: var(--texto-gris);
+}
+html.modo-oscuro .contenedor-cards .card h3 {
+    color: var(--titulo-azul);
+}
+
+/* ==========================================
+   27. BUSCADOR Y CALCULADORA OSCUROS
+   ========================================== */
+html.modo-oscuro main:not(.pagina-tienda) .contenedor-buscador,
+html.modo-oscuro main:not(.pagina-tienda) #formulario-calculadora {
+    background-color: #20344a;
+    border-color: #3b5871;
+}
+html.modo-oscuro main:not(.pagina-tienda) #buscador-peces,
+html.modo-oscuro main:not(.pagina-tienda) .campo-calculadora input {
+    background-color: #102235;
+    color: #f2f7fc;
+    border-color: #55748e;
+}
+html.modo-oscuro main:not(.pagina-tienda) #buscador-peces::placeholder,
+html.modo-oscuro main:not(.pagina-tienda) .campo-calculadora input::placeholder {
+    color: #b3c4d2;
+}
+html.modo-oscuro main:not(.pagina-tienda) .contenedor-buscador label,
+html.modo-oscuro main:not(.pagina-tienda) .campo-calculadora label {
+    color: var(--titulo-azul);
+}
+html.modo-oscuro main:not(.pagina-tienda) .contenedor-cards .sin-resultados,
+html.modo-oscuro main:not(.pagina-tienda) .resultado-calculadora.exito {
+    background-color: #203f50;
+    border-color: #4a91ae;
+    color: #e5f5ff;
+}
+html.modo-oscuro main:not(.pagina-tienda) .resultado-calculadora h3,
+html.modo-oscuro main:not(.pagina-tienda) .resultado-calculadora.exito p {
+    color: #d6f0ff;
+}
+html.modo-oscuro main:not(.pagina-tienda) .resultado-calculadora.error {
+    background-color: #46232f;
+    border-color: #a65c73;
+    color: #ffdce6;
+}
+html.modo-oscuro main:not(.pagina-tienda) .seccion-calculadora .nota-calculadora {
+    color: #b9cbd9;
+}
+html.modo-oscuro main:not(.pagina-tienda) #limpiar-calculadora {
+    background-color: #38546c;
+    color: #f0f8ff;
+}
+html.modo-oscuro main:not(.pagina-tienda) #limpiar-calculadora:hover {
+    background-color: #496c88;
+}
+
+/* ==========================================
+   28. ACORDEONES Y FORMULARIOS OSCUROS
+   ========================================== */
+html.modo-oscuro .acordeon-peces .contenido-pez,
+html.modo-oscuro .accordion .contenido,
+html.modo-oscuro .accordion .item {
+    background-color: #20344a;
+    color: var(--texto-gris);
+    border-color: #3b5871;
+}
+html.modo-oscuro .acordeon-peces .contenido-pez p,
+html.modo-oscuro .accordion .contenido p {
+    color: var(--texto-gris);
+}
+html.modo-oscuro input:not([type="submit"]):not([type="reset"]):not([type="button"]),
+html.modo-oscuro textarea,
+html.modo-oscuro select {
+    color-scheme: dark;
+}
+html.modo-oscuro #formulario-contacto input,
+html.modo-oscuro #formulario-contacto textarea,
+html.modo-oscuro #formulario-contacto select {
+    background-color: #102235;
+    color: #f2f7fc;
+    border-color: #55748e;
+}
+html.modo-oscuro #formulario-contacto label {
+    color: var(--texto-gris);
+}
+
+/* ==========================================
+   29. PIE DE PÁGINA Y PANTALLAS PEQUEÑAS
+   ========================================== */
+html.modo-oscuro footer,
+html.modo-oscuro .footer {
+    background-color: #102235;
+    color: #e0eaf4;
+}
+html.modo-oscuro footer a,
+html.modo-oscuro .footer a {
+    color: #bde5ff;
+}
+@media (max-width: 480px) {
+    .header #boton-tema {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
+
+/* ==========================================
+   30. SECCIÓN DE CONSEJOS PARA TU ACUARIO
+   CUARTA FUNCIONALIDAD NUEVA
+   ========================================== */
+
+/* Tarjeta principal de consejos */
+main:not(.pagina-tienda) > section.seccion-consejos {
+    width: 100%;
+    margin: 0 auto 25px;
+    padding: 35px 30px;
+    background: var(--tarjeta-blanca);
+    border-radius: 16px;
+    box-shadow: var(--sombra-suave);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Título de la sección */
+main:not(.pagina-tienda) .seccion-consejos h2 {
+    margin-bottom: 15px;
+    color: var(--titulo-azul);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Ícono de consejos */
+main:not(.pagina-tienda) .seccion-consejos h2 i {
+    margin-right: 8px;
+    color: var(--azul-principal);
+}
+
+/* Descripción */
+main:not(.pagina-tienda) .seccion-consejos p {
+    max-width: 750px;
+    margin: 0 auto 22px;
+    color: var(--texto-gris);
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Botón Ver consejos */
+main:not(.pagina-tienda) #abrir-modal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 10px;
+    background: var(--azul-principal);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+main:not(.pagina-tienda) #abrir-modal:hover {
+    background: var(--azul-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.22);
+}
+
+/* Accesibilidad del botón */
+main:not(.pagina-tienda) #abrir-modal:focus-visible {
+    outline: 3px solid var(--titulo-azul);
+    outline-offset: 4px;
+}
+
+/* ==========================================
+   31. FONDO DE LA VENTANA MODAL
+   ========================================== */
+
+/* Ocultar el fondo cuando JavaScript lo indique */
+#fondo-modal[hidden] {
+    display: none !important;
+}
+
+/* Fondo semitransparente */
+#fondo-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(5, 19, 34, 0.72);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Animación al abrir */
+#fondo-modal.activo {
+    animation: aparecerFondo 0.25s ease;
+}
+
+@keyframes aparecerFondo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ==========================================
+   32. DISEÑO DE LA VENTANA MODAL
+   ========================================== */
+
+/* Ventana blanca centrada */
+#modal-consejos {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    max-height: calc(100dvh - 40px);
+    margin: auto;
+    padding: 35px 35px 30px;
+    border: 1px solid #d5eaf5;
+    border-radius: 18px;
+    background: #ffffff;
+    color: #374151;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    overflow-y: auto;
+    animation: aparecerVentana 0.3s ease;
+}
+
+/* Animación de entrada */
+@keyframes aparecerVentana {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Título de la ventana */
+#modal-consejos h2 {
+    margin: 0 35px 18px 0;
+    color: #003b70;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* Ícono del título */
+#modal-consejos h2 i {
+    margin-right: 8px;
+    color: #0077b6;
+}
+
+/* Descripción introductoria */
+#modal-consejos > p {
+    margin: 0 0 20px;
+    color: #374151;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Lista de recomendaciones */
+#modal-consejos ul {
+    margin: 0 0 25px;
+    padding-left: 25px;
+    color: #374151;
+    line-height: 1.8;
+}
+
+/* Separación de los consejos */
+#modal-consejos li {
+    margin-bottom: 12px;
+    padding-left: 3px;
+    font-size: 15px;
+}
+
+/* Destacar las palabras principales */
+#modal-consejos li strong {
+    color: #003b70;
+}
+
+/* ==========================================
+   33. BOTONES DE LA VENTANA MODAL
+   ========================================== */
+
+/* Botón X para cerrar */
+#cerrar-modal {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #e8f2f8;
+    color: #003b70;
+    font-size: 20px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Efecto del botón X */
+#cerrar-modal:hover {
+    background: #cfe7f4;
+    transform: rotate(90deg);
+}
+
+/* Botón Entendido */
+#entendido-modal {
+    display: block;
+    min-height: 46px;
+    margin: 10px auto 0;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 10px;
+    background: #0077b6;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Efecto del botón Entendido */
+#entendido-modal:hover {
+    background: #005f8f;
+    transform: translateY(-2px);
+}
+
+/* Accesibilidad de los botones */
+#cerrar-modal:focus-visible,
+#entendido-modal:focus-visible {
+    outline: 3px solid #0077b6;
+    outline-offset: 4px;
+}
+
+/* ==========================================
+   34. VENTANA MODAL EN MODO OSCURO
+   ========================================== */
+
+/* Tarjeta de consejos */
+html.modo-oscuro main:not(.pagina-tienda) > section.seccion-consejos {
+    background-color: var(--tarjeta-blanca);
+    color: var(--texto-gris);
+}
+
+/* Título y descripción */
+html.modo-oscuro main:not(.pagina-tienda) .seccion-consejos h2 {
+    color: var(--titulo-azul);
+}
+
+html.modo-oscuro main:not(.pagina-tienda) .seccion-consejos p {
+    color: var(--texto-gris);
+}
+
+/* Ventana principal oscura */
+html.modo-oscuro #modal-consejos {
+    background: #172638;
+    border-color: #3b5871;
+    color: #e0eaf4;
+}
+
+/* Título oscuro */
+html.modo-oscuro #modal-consejos h2 {
+    color: #a9dfff;
+}
+
+/* Ícono del título */
+html.modo-oscuro #modal-consejos h2 i {
+    color: #6cc6ff;
+}
+
+/* Descripción y consejos */
+html.modo-oscuro #modal-consejos > p,
+html.modo-oscuro #modal-consejos ul,
+html.modo-oscuro #modal-consejos li {
+    color: #e0eaf4;
+}
+
+/* Palabras destacadas */
+html.modo-oscuro #modal-consejos li strong {
+    color: #a9dfff;
+}
+
+/* Botón X oscuro */
+html.modo-oscuro #cerrar-modal {
+    background: #294a65;
+    color: #ffffff;
+}
+
+html.modo-oscuro #cerrar-modal:hover {
+    background: #38627e;
+}
+
+/* Botón Entendido oscuro */
+html.modo-oscuro #entendido-modal {
+    background: #168ac8;
+    color: #ffffff;
+}
+
+html.modo-oscuro #entendido-modal:hover {
+    background: #0874af;
+}
+
+/* ==========================================
+   35. DISEÑO RESPONSIVE DE CONSEJOS Y MODAL
+   ========================================== */
+
+/* Tabletas */
+@media (max-width: 768px) {
+
+    main:not(.pagina-tienda) > section.seccion-consejos {
+        padding: 25px 18px;
+        margin-bottom: 18px;
+    }
+
+    main:not(.pagina-tienda) .seccion-consejos h2 {
+        font-size: 22px;
+    }
+
+    #modal-consejos {
+        max-width: 580px;
+        padding: 30px 25px 25px;
+    }
+
+    #modal-consejos h2 {
+        font-size: 22px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+
+    main:not(.pagina-tienda) > section.seccion-consejos {
+        padding: 22px 15px;
+        border-radius: 12px;
+    }
+
+    main:not(.pagina-tienda) .seccion-consejos h2 {
+        font-size: 20px;
+    }
+
+    main:not(.pagina-tienda) .seccion-consejos p {
+        font-size: 15px;
+    }
+
+    main:not(.pagina-tienda) #abrir-modal {
+        width: 100%;
+        max-width: 280px;
+        font-size: 15px;
+    }
+
+    #fondo-modal {
+        padding: 12px;
+    }
+
+    #modal-consejos {
+        max-height: calc(100dvh - 24px);
+        padding: 55px 18px 22px;
+        border-radius: 14px;
+    }
+
+    #modal-consejos h2 {
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    #modal-consejos > p {
+        font-size: 14px;
+    }
+
+    #modal-consejos ul {
+        padding-left: 20px;
+    }
+
+    #modal-consejos li {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    #cerrar-modal {
+        top: 12px;
+        right: 12px;
+    }
+
+    #entendido-modal {
+        width: 100%;
+    }
 }
 
 /* ==========================================
    FIN DE LAS MEJORAS VISUALES
    ========================================== */
+

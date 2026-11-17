@@ -32,11 +32,29 @@ $titulo = $titulo ?? "Mundo de los Peces";
          4. ÍCONOS FONT AWESOME
          ========================================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ==========================================
+         5. RECUPERAR EL TEMA GUARDADO
+         TERCERA FUNCIONALIDAD NUEVA
+         ========================================== -->
+    <script>
+        // Recuperar la preferencia del visitante.
+        try {
+            const temaGuardado = localStorage.getItem("tema-mundo-peces");
+
+            // Activar el modo oscuro si estaba seleccionado.
+            if (temaGuardado === "oscuro") {
+                document.documentElement.classList.add("modo-oscuro");
+            }
+        } catch (error) {
+            // Mantener el modo claro si no hay acceso a localStorage.
+        }
+    </script>
 </head>
 
 <body>
     <!-- ==========================================
-         5. ENCABEZADO PRINCIPAL
+         6. ENCABEZADO PRINCIPAL
          ========================================== -->
     <header class="header">
 
@@ -47,7 +65,7 @@ $titulo = $titulo ?? "Mundo de los Peces";
         </a>
 
         <!-- ======================================
-             6. BOTÓN HAMBURGUESA
+             7. BOTÓN HAMBURGUESA
              ====================================== -->
         <button class="hamburguesa" id="boton-menu" type="button"
                 aria-label="Abrir menú" aria-expanded="false"
@@ -58,7 +76,7 @@ $titulo = $titulo ?? "Mundo de los Peces";
         </button>
 
         <!-- ======================================
-             7. MENÚ DE NAVEGACIÓN
+             8. MENÚ DE NAVEGACIÓN
              ====================================== -->
         <nav class="menu" id="menu">
             <ul>
@@ -101,7 +119,21 @@ $titulo = $titulo ?? "Mundo de los Peces";
         </nav>
 
         <!-- ======================================
-             8. BOTÓN DE LA TIENDA
+             9. BOTÓN DE MODO OSCURO
+             TERCERA FUNCIONALIDAD NUEVA
+             ====================================== -->
+        <button
+            class="boton-tema"
+            id="boton-tema"
+            type="button"
+            aria-label="Activar modo oscuro"
+            aria-pressed="false"
+            title="Cambiar modo claro u oscuro">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+
+        <!-- ======================================
+             10. BOTÓN DE LA TIENDA
              ====================================== -->
         <a href="tienda.php" class="boton-tienda" aria-label="Visitar tienda">
             <i class="fa-solid fa-cart-shopping"></i>
